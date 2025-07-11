@@ -164,7 +164,7 @@ export class MemStorage implements IStorage {
 
   async createEvent(insertEvent: InsertEvent): Promise<Event> {
     const id = this.currentEventId++;
-    const event: Event = { ...insertEvent, id };
+    const event: Event = { ...insertEvent, id, isActive: insertEvent.isActive ?? true };
     this.events.set(id, event);
     return event;
   }
@@ -179,7 +179,7 @@ export class MemStorage implements IStorage {
 
   async createJob(insertJob: InsertJob): Promise<Job> {
     const id = this.currentJobId++;
-    const job: Job = { ...insertJob, id };
+    const job: Job = { ...insertJob, id, isActive: insertJob.isActive ?? true, salary: insertJob.salary ?? null };
     this.jobs.set(id, job);
     return job;
   }
@@ -196,7 +196,7 @@ export class MemStorage implements IStorage {
 
   async createFAQ(insertFAQ: InsertFAQ): Promise<FAQ> {
     const id = this.currentFaqId++;
-    const faq: FAQ = { ...insertFAQ, id };
+    const faq: FAQ = { ...insertFAQ, id, isActive: insertFAQ.isActive ?? true, order: insertFAQ.order ?? 0 };
     this.faqs.set(id, faq);
     return faq;
   }

@@ -8,42 +8,49 @@ export default function Supportathon() {
       <title>Supportathon 2024 - CXSpace</title>
       <meta name="description" content="Join Supportathon 2024, CXSpace's flagship hackathon-style event for customer support professionals. March 15-17, 2024 in San Francisco and virtual." />
       
-      <div className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="py-20 bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blob"></div>
+          <div className="absolute bottom-10 right-10 w-24 h-24 bg-white rounded-full animate-bounce-slow"></div>
+          <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-white rounded-full floating"></div>
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center text-white mb-16">
-            <h1 className="text-4xl font-bold mb-4">Supportathon 2024</h1>
+            <h1 className="text-4xl font-bold mb-4">Supportathon 2024 🏆</h1>
             <p className="text-xl text-purple-100 max-w-3xl mx-auto">
-              Our flagship event bringing together the best minds in customer support and success for intensive collaboration, learning, and innovation.
+              Our flagship event bringing together the best minds in customer support and success for intensive collaboration, learning, and innovation! 🚀✨
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
-              <h2 className="text-3xl font-bold mb-6">What is Supportathon?</h2>
+              <h2 className="text-3xl font-bold mb-6">What is Supportathon? 🤔</h2>
               <p className="text-lg text-purple-100 mb-6">
-                Supportathon is our annual hackathon-style event where teams compete to solve real customer support challenges, build innovative solutions, and share best practices.
+                Supportathon is our annual hackathon-style event where teams compete to solve real customer support challenges, build innovative solutions, and share best practices! 💡🎯
               </p>
               <div className="space-y-4 mb-8">
                 <div className="flex items-center">
-                  <Calendar className="text-pink-300 h-6 w-6 mr-3" />
-                  <span className="text-purple-100">March 15-17, 2024</span>
+                  <Calendar className="text-pink-300 h-6 w-6 mr-3 animate-bounce" />
+                  <span className="text-purple-100">📅 March 15-17, 2024</span>
                 </div>
                 <div className="flex items-center">
-                  <MapPin className="text-pink-300 h-6 w-6 mr-3" />
-                  <span className="text-purple-100">Virtual & In-Person (San Francisco)</span>
+                  <MapPin className="text-pink-300 h-6 w-6 mr-3 animate-wiggle" />
+                  <span className="text-purple-100">🌐 Virtual & In-Person (San Francisco)</span>
                 </div>
                 <div className="flex items-center">
-                  <Users className="text-pink-300 h-6 w-6 mr-3" />
-                  <span className="text-purple-100">500+ Expected Participants</span>
+                  <Users className="text-pink-300 h-6 w-6 mr-3 animate-pulse" />
+                  <span className="text-purple-100">👥 500+ Expected Participants</span>
                 </div>
                 <div className="flex items-center">
-                  <Trophy className="text-pink-300 h-6 w-6 mr-3" />
-                  <span className="text-purple-100">$50,000 in Prizes</span>
+                  <Trophy className="text-pink-300 h-6 w-6 mr-3 animate-bounce-slow" />
+                  <span className="text-purple-100">💰 $50,000 in Prizes</span>
                 </div>
               </div>
-              <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50">
-                <Rocket className="mr-2 h-5 w-5" />
-                Register Now
+              <Button size="lg" className="bg-white text-purple-600 hover:bg-purple-50 neon-border transform hover:scale-105 transition-all duration-300">
+                <Rocket className="mr-2 h-5 w-5 animate-bounce" />
+                🚀 Register Now
               </Button>
             </div>
             <div className="relative">

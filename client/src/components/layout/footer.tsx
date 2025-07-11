@@ -8,13 +8,13 @@ export default function Footer() {
         <div className="grid lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center blob pulse-rainbow animate-bounce-slow">
                 <span className="text-white font-bold text-xl">CX</span>
               </div>
-              <span className="ml-2 text-xl font-bold">CXSpace</span>
+              <span className="ml-2 text-xl font-bold gradient-text">CXSpace</span>
             </div>
             <p className="text-neutral-400 mb-6 max-w-md">
-              The premier community for customer success engineers, technical support professionals, and B2B SaaS experts worldwide.
+              The premier community for customer success engineers, technical support professionals, and B2B SaaS experts worldwide! 🌟
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-neutral-400 hover:text-white transition-colors">

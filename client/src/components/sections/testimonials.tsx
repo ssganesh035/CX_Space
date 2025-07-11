@@ -7,22 +7,25 @@ export default function Testimonials() {
       name: "Sarah Anderson",
       role: "Senior Customer Success Manager",
       initials: "SA",
-      content: "CXSpace has been instrumental in my career growth. The networking opportunities and knowledge sharing have helped me become a better customer success professional.",
-      bgColor: "bg-primary"
+      content: "CXSpace has been instrumental in my career growth! 🚀 The networking opportunities and knowledge sharing have helped me become a better customer success professional.",
+      bgColor: "bg-primary",
+      emoji: "🌟"
     },
     {
       name: "Michael Chen",
       role: "Technical Support Engineer",
       initials: "MC",
-      content: "The technical workshops and peer-to-peer learning in CXSpace have significantly improved my troubleshooting skills and helped me advance to a senior role.",
-      bgColor: "bg-accent"
+      content: "The technical workshops and peer-to-peer learning in CXSpace have significantly improved my troubleshooting skills and helped me advance to a senior role! 💪",
+      bgColor: "bg-accent",
+      emoji: "🔧"
     },
     {
       name: "Emily Johnson",
       role: "Solutions Engineer",
       initials: "EJ",
-      content: "Finding a job in customer success seemed impossible until I joined CXSpace. The career resources and mentorship program made all the difference.",
-      bgColor: "bg-secondary"
+      content: "Finding a job in customer success seemed impossible until I joined CXSpace. The career resources and mentorship program made all the difference! 🎯",
+      bgColor: "bg-secondary",
+      emoji: "💼"
     }
   ];
 
@@ -38,14 +41,19 @@ export default function Testimonials() {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="shadow-lg">
+            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 blob">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <Avatar className={`${testimonial.bgColor} text-white`}>
-                    <AvatarFallback className={`${testimonial.bgColor} text-white`}>
-                      {testimonial.initials}
-                    </AvatarFallback>
-                  </Avatar>
+                  <div className="relative">
+                    <Avatar className={`${testimonial.bgColor} text-white animate-bounce-slow`}>
+                      <AvatarFallback className={`${testimonial.bgColor} text-white`}>
+                        {testimonial.initials}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="absolute -top-2 -right-2 text-xl animate-wiggle">
+                      {testimonial.emoji}
+                    </div>
+                  </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-neutral-900">{testimonial.name}</h4>
                     <p className="text-sm text-neutral-600">{testimonial.role}</p>

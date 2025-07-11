@@ -22,11 +22,11 @@ export default function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+          <Link href="/" className="flex items-center group">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center blob pulse-rainbow animate-bounce-slow group-hover:animate-wiggle">
               <span className="text-white font-bold text-xl">CX</span>
             </div>
-            <span className="ml-2 text-xl font-bold text-neutral-900">CXSpace</span>
+            <span className="ml-2 text-xl font-bold gradient-text">CXSpace</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -48,8 +48,8 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button asChild>
-              <Link href="/join">Join Community</Link>
+            <Button asChild className="neon-border bg-gradient-to-r from-primary to-secondary hover:from-accent hover:to-primary transform hover:scale-105 transition-all duration-300">
+              <Link href="/join">✨ Join Community</Link>
             </Button>
           </div>
 
