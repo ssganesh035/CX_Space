@@ -23,32 +23,35 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center blob pulse-rainbow animate-bounce-slow group-hover:animate-wiggle shadow-lg shadow-blue-500/50">
+            <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg shadow-blue-500/50 group-hover:shadow-blue-400/60 transition-all duration-300">
               <span className="text-white font-bold text-xl">CX</span>
             </div>
             <span className="ml-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">CXSpace</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className={`px-3 py-2 text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
+                className={`px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 transform hover:scale-105 relative ${
                   location === item.href
-                    ? "text-blue-400 border-b-2 border-blue-400"
-                    : "text-slate-300 hover:text-blue-400"
+                    ? "text-blue-400 bg-slate-800/50 shadow-inner"
+                    : "text-slate-300 hover:text-blue-400 hover:bg-slate-800/30"
                 }`}
               >
                 {item.name}
+                {location === item.href && (
+                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-blue-400 rounded-full"></div>
+                )}
               </Link>
             ))}
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button asChild className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white shadow-lg shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 font-semibold">
+            <Button asChild className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white shadow-lg shadow-blue-500/25 transform hover:scale-105 transition-all duration-300 font-semibold px-6 py-2 rounded-lg border border-blue-400/20">
               <Link href="/join">✨ Join Community</Link>
             </Button>
           </div>
