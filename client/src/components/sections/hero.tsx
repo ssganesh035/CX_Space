@@ -40,8 +40,6 @@ export default function Hero() {
             </div>
           </div>
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl blur-xl opacity-25 animate-pulse"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl blur-lg opacity-20 animate-pulse delay-75"></div>
             <div className="w-full h-auto relative z-10 floating">
               <svg
                 width="100%"
@@ -108,13 +106,7 @@ export default function Hero() {
                   <text x="120" y="63" textAnchor="middle" fill="#10B981" fontSize="5">Engineer</text>
                 </g>
                 
-                {/* Communication Lines */}
-                <path d="M 260 120 Q 280 100 310 105" stroke="#3B82F6" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
-                  <animate attributeName="strokeDashoffset" values="0;8" dur="2s" repeatCount="indefinite" />
-                </path>
-                <path d="M 260 140 Q 300 130 360 105" stroke="#06B6D4" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
-                  <animate attributeName="strokeDashoffset" values="0;8" dur="1.8s" repeatCount="indefinite" />
-                </path>
+
                 
                 {/* Additional Tech Elements - Adjusted Box Sizes */}
                 <g transform="translate(30, 60)">
@@ -147,117 +139,117 @@ export default function Hero() {
                   <text x="27" y="11" textAnchor="middle" fill="#EF4444" fontSize="6" fontWeight="bold">Rapport Building</text>
                 </g>
                 
-                {/* AI Innovation - Enhanced */}
-                <g transform="translate(40, 200)">
-                  <rect x="0" y="0" width="90" height="45" rx="8" fill="#8B5CF6" opacity="0.15" stroke="#8B5CF6" strokeWidth="2" />
-                  <rect x="5" y="5" width="80" height="8" rx="4" fill="#8B5CF6" opacity="0.8" />
-                  <text x="45" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">AI INNOVATION</text>
+                {/* AI Innovation - Enhanced - Bigger */}
+                <g transform="translate(40, 180)">
+                  <rect x="0" y="0" width="120" height="60" rx="8" fill="#8B5CF6" opacity="0.15" stroke="#8B5CF6" strokeWidth="2" />
+                  <rect x="5" y="5" width="110" height="10" rx="4" fill="#8B5CF6" opacity="0.8" />
+                  <text x="60" y="13" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">AI INNOVATION</text>
                   
                   {/* Neural network style connections */}
-                  <circle cx="20" cy="25" r="4" fill="#8B5CF6" opacity="0.9">
+                  <circle cx="25" cy="30" r="5" fill="#8B5CF6" opacity="0.9">
                     <animate attributeName="opacity" values="0.9;0.4;0.9" dur="2s" repeatCount="indefinite" />
                   </circle>
-                  <circle cx="45" cy="20" r="3" fill="#A855F7" opacity="0.7">
+                  <circle cx="60" cy="25" r="4" fill="#A855F7" opacity="0.7">
                     <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite" />
                   </circle>
-                  <circle cx="70" cy="25" r="4" fill="#8B5CF6" opacity="0.8">
+                  <circle cx="95" cy="30" r="5" fill="#8B5CF6" opacity="0.8">
                     <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite" />
                   </circle>
-                  <circle cx="32" cy="35" r="3" fill="#C084FC" opacity="0.6">
+                  <circle cx="40" cy="45" r="4" fill="#C084FC" opacity="0.6">
                     <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite" />
                   </circle>
-                  <circle cx="58" cy="35" r="3" fill="#A855F7" opacity="0.7">
+                  <circle cx="80" cy="45" r="4" fill="#A855F7" opacity="0.7">
                     <animate attributeName="opacity" values="0.7;0.4;0.7" dur="2.2s" repeatCount="indefinite" />
                   </circle>
                   
                   {/* Connection lines */}
-                  <line x1="20" y1="25" x2="45" y2="20" stroke="#8B5CF6" strokeWidth="1" opacity="0.5" />
-                  <line x1="45" y1="20" x2="70" y2="25" stroke="#8B5CF6" strokeWidth="1" opacity="0.5" />
-                  <line x1="32" y1="35" x2="58" y2="35" stroke="#8B5CF6" strokeWidth="1" opacity="0.5" />
+                  <line x1="25" y1="30" x2="60" y2="25" stroke="#8B5CF6" strokeWidth="1" opacity="0.5" />
+                  <line x1="60" y1="25" x2="95" y2="30" stroke="#8B5CF6" strokeWidth="1" opacity="0.5" />
+                  <line x1="40" y1="45" x2="80" y2="45" stroke="#8B5CF6" strokeWidth="1" opacity="0.5" />
                   
-                  <text x="45" y="42" textAnchor="middle" fill="#8B5CF6" fontSize="5">Machine Learning</text>
+                  <text x="60" y="56" textAnchor="middle" fill="#8B5CF6" fontSize="6">Machine Learning</text>
                 </g>
                 
-                {/* Product Knowledge Base - Enhanced */}
-                <g transform="translate(150, 200)">
-                  <rect x="0" y="0" width="100" height="45" rx="8" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" strokeWidth="2" />
-                  <rect x="5" y="5" width="90" height="8" rx="4" fill="#F59E0B" opacity="0.8" />
-                  <text x="50" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">PRODUCT KNOWLEDGE</text>
+                {/* Product Knowledge Base - Enhanced - Bigger */}
+                <g transform="translate(180, 180)">
+                  <rect x="0" y="0" width="130" height="60" rx="8" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" strokeWidth="2" />
+                  <rect x="5" y="5" width="120" height="10" rx="4" fill="#F59E0B" opacity="0.8" />
+                  <text x="65" y="13" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">PRODUCT KNOWLEDGE</text>
                   
                   {/* Knowledge documents */}
-                  <rect x="10" y="18" width="18" height="14" rx="2" fill="#F59E0B" opacity="0.7" />
-                  <rect x="12" y="20" width="14" height="1" rx="0.5" fill="white" opacity="0.8" />
-                  <rect x="12" y="22" width="10" height="1" rx="0.5" fill="white" opacity="0.6" />
-                  <rect x="12" y="24" width="12" height="1" rx="0.5" fill="white" opacity="0.6" />
+                  <rect x="15" y="22" width="22" height="18" rx="2" fill="#F59E0B" opacity="0.7" />
+                  <rect x="17" y="25" width="18" height="1.5" rx="0.5" fill="white" opacity="0.8" />
+                  <rect x="17" y="28" width="14" height="1.5" rx="0.5" fill="white" opacity="0.6" />
+                  <rect x="17" y="31" width="16" height="1.5" rx="0.5" fill="white" opacity="0.6" />
                   
-                  <rect x="34" y="18" width="18" height="14" rx="2" fill="#F59E0B" opacity="0.8" />
-                  <rect x="36" y="20" width="14" height="1" rx="0.5" fill="white" opacity="0.8" />
-                  <rect x="36" y="22" width="8" height="1" rx="0.5" fill="white" opacity="0.6" />
-                  <rect x="36" y="24" width="12" height="1" rx="0.5" fill="white" opacity="0.6" />
+                  <rect x="45" y="22" width="22" height="18" rx="2" fill="#F59E0B" opacity="0.8" />
+                  <rect x="47" y="25" width="18" height="1.5" rx="0.5" fill="white" opacity="0.8" />
+                  <rect x="47" y="28" width="12" height="1.5" rx="0.5" fill="white" opacity="0.6" />
+                  <rect x="47" y="31" width="16" height="1.5" rx="0.5" fill="white" opacity="0.6" />
                   
-                  <rect x="58" y="18" width="18" height="14" rx="2" fill="#F59E0B" opacity="0.6" />
-                  <rect x="60" y="20" width="14" height="1" rx="0.5" fill="white" opacity="0.8" />
-                  <rect x="60" y="22" width="11" height="1" rx="0.5" fill="white" opacity="0.6" />
-                  <rect x="60" y="24" width="9" height="1" rx="0.5" fill="white" opacity="0.6" />
+                  <rect x="75" y="22" width="22" height="18" rx="2" fill="#F59E0B" opacity="0.6" />
+                  <rect x="77" y="25" width="18" height="1.5" rx="0.5" fill="white" opacity="0.8" />
+                  <rect x="77" y="28" width="15" height="1.5" rx="0.5" fill="white" opacity="0.6" />
+                  <rect x="77" y="31" width="13" height="1.5" rx="0.5" fill="white" opacity="0.6" />
                   
-                  <rect x="82" y="18" width="12" height="14" rx="2" fill="#F59E0B" opacity="0.9" />
-                  <text x="88" y="27" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">FAQ</text>
+                  <rect x="105" y="22" width="16" height="18" rx="2" fill="#F59E0B" opacity="0.9" />
+                  <text x="113" y="33" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">FAQ</text>
                   
-                  <text x="50" y="42" textAnchor="middle" fill="#F59E0B" fontSize="5">Training Materials</text>
+                  <text x="65" y="56" textAnchor="middle" fill="#F59E0B" fontSize="6">Training Materials</text>
                 </g>
                 
-                {/* Customer Support - Enhanced */}
-                <g transform="translate(270, 200)">
-                  <rect x="0" y="0" width="110" height="45" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" strokeWidth="2" />
-                  <rect x="5" y="5" width="100" height="8" rx="4" fill="#EF4444" opacity="0.8" />
-                  <text x="55" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">CUSTOMER SUPPORT</text>
+                {/* Customer Support - Enhanced - Bigger */}
+                <g transform="translate(330, 180)">
+                  <rect x="0" y="0" width="140" height="60" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" strokeWidth="2" />
+                  <rect x="5" y="5" width="130" height="10" rx="4" fill="#EF4444" opacity="0.8" />
+                  <text x="70" y="13" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">CUSTOMER SUPPORT</text>
                   
                   {/* Support Tickets with status indicators */}
-                  <rect x="10" y="18" width="15" height="10" rx="2" fill="#EF4444" opacity="0.8" />
-                  <circle cx="20" cy="23" r="2" fill="white" />
-                  <text x="20" y="25" textAnchor="middle" fill="#EF4444" fontSize="4" fontWeight="bold">!</text>
-                  <text x="17" y="33" fill="#EF4444" fontSize="4">HIGH</text>
+                  <rect x="10" y="22" width="25" height="12" rx="2" fill="#EF4444" opacity="0.8" />
+                  <circle cx="20" cy="28" r="3" fill="white" />
+                  <text x="20" y="30" textAnchor="middle" fill="#EF4444" fontSize="5" fontWeight="bold">!</text>
+                  <text x="27" y="30" fill="white" fontSize="5">HIGH</text>
                   
-                  <rect x="32" y="18" width="15" height="10" rx="2" fill="#10B981" opacity="0.8" />
-                  <circle cx="42" cy="23" r="2" fill="white" />
-                  <text x="42" y="25" textAnchor="middle" fill="#10B981" fontSize="4" fontWeight="bold">✓</text>
-                  <text x="38" y="33" fill="#10B981" fontSize="4">DONE</text>
+                  <rect x="42" y="22" width="25" height="12" rx="2" fill="#10B981" opacity="0.8" />
+                  <circle cx="52" cy="28" r="3" fill="white" />
+                  <text x="52" y="30" textAnchor="middle" fill="#10B981" fontSize="5" fontWeight="bold">✓</text>
+                  <text x="59" y="30" fill="white" fontSize="5">DONE</text>
                   
-                  <rect x="54" y="18" width="15" height="10" rx="2" fill="#06B6D4" opacity="0.8" />
-                  <circle cx="64" cy="23" r="2" fill="white" />
-                  <text x="64" y="25" textAnchor="middle" fill="#06B6D4" fontSize="4" fontWeight="bold">→</text>
-                  <text x="59" y="33" fill="#06B6D4" fontSize="4">PROG</text>
+                  <rect x="74" y="22" width="25" height="12" rx="2" fill="#06B6D4" opacity="0.8" />
+                  <circle cx="84" cy="28" r="3" fill="white" />
+                  <text x="84" y="30" textAnchor="middle" fill="#06B6D4" fontSize="5" fontWeight="bold">→</text>
+                  <text x="91" y="30" fill="white" fontSize="5">PROG</text>
                   
-                  <rect x="76" y="18" width="15" height="10" rx="2" fill="#F59E0B" opacity="0.8" />
-                  <circle cx="86" cy="23" r="2" fill="white" />
-                  <text x="86" y="25" textAnchor="middle" fill="#F59E0B" fontSize="4" fontWeight="bold">⏱</text>
-                  <text x="81" y="33" fill="#F59E0B" fontSize="4">PEND</text>
+                  <rect x="106" y="22" width="25" height="12" rx="2" fill="#F59E0B" opacity="0.8" />
+                  <circle cx="116" cy="28" r="3" fill="white" />
+                  <text x="116" y="30" textAnchor="middle" fill="#F59E0B" fontSize="5" fontWeight="bold">⏱</text>
+                  <text x="123" y="30" fill="white" fontSize="5">PEND</text>
                   
-                  <text x="55" y="42" textAnchor="middle" fill="#EF4444" fontSize="5">Ticket Management</text>
+                  <text x="70" y="50" textAnchor="middle" fill="#EF4444" fontSize="6">Ticket Management</text>
                 </g>
                 
-                {/* Communication Bubbles */}
-                <g transform="translate(400, 150)">
+                {/* Communication Bubbles - Moved to Bottom Horizontally */}
+                <g transform="translate(150, 270)">
                   <ellipse cx="0" cy="0" rx="25" ry="15" fill="#3B82F6" opacity="0.3" />
                   <text x="0" y="3" textAnchor="middle" fill="#3B82F6" fontSize="8">Chat</text>
                   
-                  <ellipse cx="0" cy="30" rx="25" ry="15" fill="#06B6D4" opacity="0.3" />
-                  <text x="0" y="33" textAnchor="middle" fill="#06B6D4" fontSize="8">Email</text>
+                  <ellipse cx="60" cy="0" rx="25" ry="15" fill="#06B6D4" opacity="0.3" />
+                  <text x="60" y="3" textAnchor="middle" fill="#06B6D4" fontSize="8">Email</text>
                   
-                  <ellipse cx="0" cy="60" rx="25" ry="15" fill="#10B981" opacity="0.3" />
-                  <text x="0" y="63" textAnchor="middle" fill="#10B981" fontSize="8">Voice</text>
+                  <ellipse cx="120" cy="0" rx="25" ry="15" fill="#10B981" opacity="0.3" />
+                  <text x="120" y="3" textAnchor="middle" fill="#10B981" fontSize="8">Voice</text>
                 </g>
                 
-                {/* Technology Stack Icons */}
-                <g transform="translate(420, 60)">
-                  <rect x="0" y="0" width="20" height="15" rx="3" fill="#3B82F6" opacity="0.7" />
-                  <text x="10" y="10" textAnchor="middle" fill="white" fontSize="6">API</text>
+                {/* Technology Stack Icons - Moved to Top Vertically */}
+                <g transform="translate(460, 20)">
+                  <rect x="0" y="0" width="25" height="18" rx="3" fill="#3B82F6" opacity="0.7" />
+                  <text x="12" y="12" textAnchor="middle" fill="white" fontSize="7">API</text>
                   
-                  <rect x="0" y="20" width="20" height="15" rx="3" fill="#06B6D4" opacity="0.7" />
-                  <text x="10" y="30" textAnchor="middle" fill="white" fontSize="6">CRM</text>
+                  <rect x="0" y="25" width="25" height="18" rx="3" fill="#06B6D4" opacity="0.7" />
+                  <text x="12" y="37" textAnchor="middle" fill="white" fontSize="7">CRM</text>
                   
-                  <rect x="0" y="40" width="20" height="15" rx="3" fill="#10B981" opacity="0.7" />
-                  <text x="10" y="50" textAnchor="middle" fill="white" fontSize="6">DB</text>
+                  <rect x="0" y="50" width="25" height="18" rx="3" fill="#10B981" opacity="0.7" />
+                  <text x="12" y="62" textAnchor="middle" fill="white" fontSize="7">DB</text>
                 </g>
                 
                 {/* Floating Success Indicators - Adjusted Box Sizes */}
