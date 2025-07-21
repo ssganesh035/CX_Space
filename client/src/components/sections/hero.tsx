@@ -75,7 +75,7 @@ export default function Hero() {
                 <text x="115" y="51" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">B2B SaaS</text>
                 
                 {/* Dashboard Content */}
-                <text x="100" y="85" fill="#3B82F6" fontSize="8" fontWeight="bold">Customer Dashboard</text>
+                <text x="100" y="85" fill="#3B82F6" fontSize="8" fontWeight="bold">Product Dashboard</text>
                 <rect x="100" y="95" width="80" height="3" rx="1.5" fill="#06B6D4" opacity="0.8" />
                 <rect x="100" y="105" width="60" height="3" rx="1.5" fill="#3B82F6" opacity="0.6" />
                 <rect x="100" y="115" width="100" height="3" rx="1.5" fill="#10B981" opacity="0.6" />
@@ -90,71 +90,68 @@ export default function Hero() {
                 <text x="210" y="135" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">98%</text>
                 <text x="210" y="150" textAnchor="middle" fill="#10B981" fontSize="6">CSAT</text>
                 
-                {/* Human Elements - Support Team */}
-                <g transform="translate(290, 70)">
+                {/* Human Elements - Support Team - Repositioned Horizontally Below Dashboard */}
+                <g transform="translate(100, 190)">
                   {/* Person 1 - Customer Success Manager */}
-                  <circle cx="20" cy="25" r="12" fill="url(#personGradient)" stroke="#3B82F6" strokeWidth="2" />
-                  <circle cx="20" cy="20" r="4" fill="#3B82F6" />
-                  <rect x="15" y="25" width="10" height="15" rx="2" fill="#3B82F6" />
-                  <text x="20" y="55" textAnchor="middle" fill="#3B82F6" fontSize="5" fontWeight="bold">CS</text>
-                  <text x="20" y="63" textAnchor="middle" fill="#3B82F6" fontSize="5">Manager</text>
+                  <circle cx="20" cy="15" r="10" fill="url(#personGradient)" stroke="#3B82F6" strokeWidth="2" />
+                  <circle cx="20" cy="12" r="3" fill="#3B82F6" />
+                  <rect x="16" y="18" width="8" height="12" rx="2" fill="#3B82F6" />
+                  <text x="20" y="40" textAnchor="middle" fill="#3B82F6" fontSize="5" fontWeight="bold">CS Manager</text>
                   
                   {/* Person 2 - Tech Support */}
-                  <circle cx="70" cy="25" r="12" fill="url(#personGradient)" stroke="#06B6D4" strokeWidth="2" />
-                  <circle cx="70" cy="20" r="4" fill="#06B6D4" />
-                  <rect x="65" y="25" width="10" height="15" rx="2" fill="#06B6D4" />
-                  <text x="70" y="55" textAnchor="middle" fill="#06B6D4" fontSize="5" fontWeight="bold">Tech</text>
-                  <text x="70" y="63" textAnchor="middle" fill="#06B6D4" fontSize="5">Support</text>
+                  <circle cx="60" cy="15" r="10" fill="url(#personGradient)" stroke="#06B6D4" strokeWidth="2" />
+                  <circle cx="60" cy="12" r="3" fill="#06B6D4" />
+                  <rect x="56" y="18" width="8" height="12" rx="2" fill="#06B6D4" />
+                  <text x="60" y="40" textAnchor="middle" fill="#06B6D4" fontSize="5" fontWeight="bold">Tech Support</text>
                   
                   {/* Person 3 - Solutions Engineer */}
-                  <circle cx="120" cy="25" r="12" fill="url(#personGradient)" stroke="#10B981" strokeWidth="2" />
-                  <circle cx="120" cy="20" r="4" fill="#10B981" />
-                  <rect x="115" y="25" width="10" height="15" rx="2" fill="#10B981" />
-                  <text x="120" y="55" textAnchor="middle" fill="#10B981" fontSize="5" fontWeight="bold">Solutions</text>
-                  <text x="120" y="63" textAnchor="middle" fill="#10B981" fontSize="5">Engineer</text>
+                  <circle cx="100" cy="15" r="10" fill="url(#personGradient)" stroke="#10B981" strokeWidth="2" />
+                  <circle cx="100" cy="12" r="3" fill="#10B981" />
+                  <rect x="96" y="18" width="8" height="12" rx="2" fill="#10B981" />
+                  <text x="100" y="40" textAnchor="middle" fill="#10B981" fontSize="5" fontWeight="bold">Solutions Eng</text>
                 </g>
                 
-                {/* Communication Lines */}
-                <path d="M 260 120 Q 280 100 310 105" stroke="#3B82F6" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
+                {/* Communication Lines - Updated for New Positions */}
+                <path d="M 200 180 Q 150 170 120 205" stroke="#3B82F6" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
                   <animate attributeName="strokeDashoffset" values="0;8" dur="2s" repeatCount="indefinite" />
                 </path>
-                <path d="M 260 140 Q 300 130 360 105" stroke="#06B6D4" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
+                <path d="M 200 180 Q 180 170 160 205" stroke="#06B6D4" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
                   <animate attributeName="strokeDashoffset" values="0;8" dur="1.8s" repeatCount="indefinite" />
                 </path>
                 
-                {/* Additional Tech Elements */}
+                {/* Additional Tech Elements - Adjusted Box Sizes */}
                 <g transform="translate(30, 60)">
-                  <rect x="0" y="0" width="35" height="18" rx="4" fill="#3B82F6" opacity="0.4" />
-                  <text x="17" y="12" textAnchor="middle" fill="#3B82F6" fontSize="7" fontWeight="bold">Webhooks</text>
+                  <rect x="0" y="0" width="42" height="18" rx="4" fill="#3B82F6" opacity="0.4" />
+                  <text x="21" y="12" textAnchor="middle" fill="#3B82F6" fontSize="7" fontWeight="bold">Webhooks</text>
                 </g>
                 
-                <g transform="translate(420, 20)">
-                  <rect x="0" y="0" width="30" height="16" rx="3" fill="#06B6D4" opacity="0.4" />
-                  <text x="15" y="11" textAnchor="middle" fill="#06B6D4" fontSize="6" fontWeight="bold">Frontend</text>
+                <g transform="translate(415, 20)">
+                  <rect x="0" y="0" width="35" height="16" rx="3" fill="#06B6D4" opacity="0.4" />
+                  <text x="17" y="11" textAnchor="middle" fill="#06B6D4" fontSize="6" fontWeight="bold">Frontend</text>
                 </g>
                 
                 <g transform="translate(10, 160)">
-                  <rect x="0" y="0" width="28" height="16" rx="3" fill="#10B981" opacity="0.4" />
-                  <text x="14" y="11" textAnchor="middle" fill="#10B981" fontSize="6" fontWeight="bold">Backend</text>
+                  <rect x="0" y="0" width="32" height="16" rx="3" fill="#10B981" opacity="0.4" />
+                  <text x="16" y="11" textAnchor="middle" fill="#10B981" fontSize="6" fontWeight="bold">Backend</text>
                 </g>
                 
-                <g transform="translate(460, 120)">
-                  <rect x="0" y="0" width="30" height="16" rx="3" fill="#8B5CF6" opacity="0.4" />
-                  <text x="15" y="11" textAnchor="middle" fill="#8B5CF6" fontSize="6" fontWeight="bold">Enterprise</text>
+                <g transform="translate(455, 120)">
+                  <rect x="0" y="0" width="38" height="16" rx="3" fill="#8B5CF6" opacity="0.4" />
+                  <text x="19" y="11" textAnchor="middle" fill="#8B5CF6" fontSize="6" fontWeight="bold">Enterprise</text>
                 </g>
                 
                 <g transform="translate(15, 100)">
-                  <rect x="0" y="0" width="22" height="16" rx="3" fill="#F59E0B" opacity="0.4" />
-                  <text x="11" y="11" textAnchor="middle" fill="#F59E0B" fontSize="6" fontWeight="bold">Data</text>
+                  <rect x="0" y="0" width="26" height="16" rx="3" fill="#F59E0B" opacity="0.4" />
+                  <text x="13" y="11" textAnchor="middle" fill="#F59E0B" fontSize="6" fontWeight="bold">Data</text>
                 </g>
                 
-                <g transform="translate(450, 180)">
-                  <rect x="0" y="0" width="40" height="16" rx="3" fill="#EF4444" opacity="0.4" />
-                  <text x="20" y="11" textAnchor="middle" fill="#EF4444" fontSize="6" fontWeight="bold">Rapport Building</text>
+                <g transform="translate(440, 180)">
+                  <rect x="0" y="0" width="54" height="16" rx="3" fill="#EF4444" opacity="0.4" />
+                  <text x="27" y="11" textAnchor="middle" fill="#EF4444" fontSize="6" fontWeight="bold">Rapport Building</text>
                 </g>
                 
-                {/* AI Innovation - Enhanced */}
-                <g transform="translate(40, 200)">
+                {/* AI Innovation - Enhanced - Moved Adjacent to Dashboard Vertically */}
+                <g transform="translate(300, 60)">
                   <rect x="0" y="0" width="90" height="45" rx="8" fill="#8B5CF6" opacity="0.15" stroke="#8B5CF6" strokeWidth="2" />
                   <rect x="5" y="5" width="80" height="8" rx="4" fill="#8B5CF6" opacity="0.8" />
                   <text x="45" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">AI INNOVATION</text>
@@ -184,8 +181,8 @@ export default function Hero() {
                   <text x="45" y="42" textAnchor="middle" fill="#8B5CF6" fontSize="5">Machine Learning</text>
                 </g>
                 
-                {/* Product Knowledge Base - Enhanced */}
-                <g transform="translate(150, 200)">
+                {/* Product Knowledge Base - Enhanced - Adjacent to Dashboard Vertically */}
+                <g transform="translate(300, 120)">
                   <rect x="0" y="0" width="100" height="45" rx="8" fill="#F59E0B" opacity="0.15" stroke="#F59E0B" strokeWidth="2" />
                   <rect x="5" y="5" width="90" height="8" rx="4" fill="#F59E0B" opacity="0.8" />
                   <text x="50" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">PRODUCT KNOWLEDGE</text>
@@ -212,46 +209,46 @@ export default function Hero() {
                   <text x="50" y="42" textAnchor="middle" fill="#F59E0B" fontSize="5">Training Materials</text>
                 </g>
                 
-                {/* Customer Support - Enhanced */}
-                <g transform="translate(270, 200)">
-                  <rect x="0" y="0" width="110" height="45" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" strokeWidth="2" />
-                  <rect x="5" y="5" width="100" height="8" rx="4" fill="#EF4444" opacity="0.8" />
-                  <text x="55" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">CUSTOMER SUPPORT</text>
+                {/* Customer Support - Enhanced - Adjacent to Dashboard Vertically */}
+                <g transform="translate(410, 60)">
+                  <rect x="0" y="0" width="85" height="105" rx="8" fill="#EF4444" opacity="0.15" stroke="#EF4444" strokeWidth="2" />
+                  <rect x="5" y="5" width="75" height="8" rx="4" fill="#EF4444" opacity="0.8" />
+                  <text x="42" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">CUSTOMER SUPPORT</text>
                   
-                  {/* Support Tickets with status indicators */}
-                  <rect x="10" y="18" width="15" height="10" rx="2" fill="#EF4444" opacity="0.8" />
-                  <circle cx="20" cy="23" r="2" fill="white" />
-                  <text x="20" y="25" textAnchor="middle" fill="#EF4444" fontSize="4" fontWeight="bold">!</text>
-                  <text x="17" y="33" fill="#EF4444" fontSize="4">HIGH</text>
+                  {/* Support Tickets with status indicators - Stacked Vertically */}
+                  <rect x="10" y="20" width="65" height="15" rx="2" fill="#EF4444" opacity="0.8" />
+                  <circle cx="20" cy="27" r="3" fill="white" />
+                  <text x="20" y="29" textAnchor="middle" fill="#EF4444" fontSize="5" fontWeight="bold">!</text>
+                  <text x="30" y="29" fill="white" fontSize="6" fontWeight="bold">HIGH PRIORITY</text>
                   
-                  <rect x="32" y="18" width="15" height="10" rx="2" fill="#10B981" opacity="0.8" />
-                  <circle cx="42" cy="23" r="2" fill="white" />
-                  <text x="42" y="25" textAnchor="middle" fill="#10B981" fontSize="4" fontWeight="bold">✓</text>
-                  <text x="38" y="33" fill="#10B981" fontSize="4">DONE</text>
+                  <rect x="10" y="40" width="65" height="15" rx="2" fill="#10B981" opacity="0.8" />
+                  <circle cx="20" cy="47" r="3" fill="white" />
+                  <text x="20" y="49" textAnchor="middle" fill="#10B981" fontSize="5" fontWeight="bold">✓</text>
+                  <text x="30" y="49" fill="white" fontSize="6" fontWeight="bold">COMPLETED</text>
                   
-                  <rect x="54" y="18" width="15" height="10" rx="2" fill="#06B6D4" opacity="0.8" />
-                  <circle cx="64" cy="23" r="2" fill="white" />
-                  <text x="64" y="25" textAnchor="middle" fill="#06B6D4" fontSize="4" fontWeight="bold">→</text>
-                  <text x="59" y="33" fill="#06B6D4" fontSize="4">PROG</text>
+                  <rect x="10" y="60" width="65" height="15" rx="2" fill="#06B6D4" opacity="0.8" />
+                  <circle cx="20" cy="67" r="3" fill="white" />
+                  <text x="20" y="69" textAnchor="middle" fill="#06B6D4" fontSize="5" fontWeight="bold">→</text>
+                  <text x="30" y="69" fill="white" fontSize="6" fontWeight="bold">IN PROGRESS</text>
                   
-                  <rect x="76" y="18" width="15" height="10" rx="2" fill="#F59E0B" opacity="0.8" />
-                  <circle cx="86" cy="23" r="2" fill="white" />
-                  <text x="86" y="25" textAnchor="middle" fill="#F59E0B" fontSize="4" fontWeight="bold">⏱</text>
-                  <text x="81" y="33" fill="#F59E0B" fontSize="4">PEND</text>
+                  <rect x="10" y="80" width="65" height="15" rx="2" fill="#F59E0B" opacity="0.8" />
+                  <circle cx="20" cy="87" r="3" fill="white" />
+                  <text x="20" y="89" textAnchor="middle" fill="#F59E0B" fontSize="5" fontWeight="bold">⏱</text>
+                  <text x="30" y="89" fill="white" fontSize="6" fontWeight="bold">PENDING</text>
                   
-                  <text x="55" y="42" textAnchor="middle" fill="#EF4444" fontSize="5">Ticket Management</text>
+                  <text x="42" y="103" textAnchor="middle" fill="#EF4444" fontSize="5">Ticket Management</text>
                 </g>
                 
-                {/* Communication Bubbles */}
-                <g transform="translate(400, 150)">
-                  <ellipse cx="0" cy="0" rx="25" ry="15" fill="#3B82F6" opacity="0.3" />
-                  <text x="0" y="3" textAnchor="middle" fill="#3B82F6" fontSize="8">Chat</text>
+                {/* Communication Bubbles - Moved to Top Horizontally */}
+                <g transform="translate(150, 20)">
+                  <ellipse cx="0" cy="0" rx="20" ry="12" fill="#3B82F6" opacity="0.3" />
+                  <text x="0" y="3" textAnchor="middle" fill="#3B82F6" fontSize="7">Chat</text>
                   
-                  <ellipse cx="0" cy="30" rx="25" ry="15" fill="#06B6D4" opacity="0.3" />
-                  <text x="0" y="33" textAnchor="middle" fill="#06B6D4" fontSize="8">Email</text>
+                  <ellipse cx="50" cy="0" rx="22" ry="12" fill="#06B6D4" opacity="0.3" />
+                  <text x="50" y="3" textAnchor="middle" fill="#06B6D4" fontSize="7">Email</text>
                   
-                  <ellipse cx="0" cy="60" rx="25" ry="15" fill="#10B981" opacity="0.3" />
-                  <text x="0" y="63" textAnchor="middle" fill="#10B981" fontSize="8">Voice</text>
+                  <ellipse cx="100" cy="0" rx="22" ry="12" fill="#10B981" opacity="0.3" />
+                  <text x="100" y="3" textAnchor="middle" fill="#10B981" fontSize="7">Voice</text>
                 </g>
                 
                 {/* Technology Stack Icons */}
@@ -266,17 +263,17 @@ export default function Hero() {
                   <text x="10" y="50" textAnchor="middle" fill="white" fontSize="6">DB</text>
                 </g>
                 
-                {/* Floating Success Indicators */}
+                {/* Floating Success Indicators - Adjusted Box Sizes */}
                 <g opacity="0.9">
                   <animate attributeName="transform" values="translate(0,0);translate(0,-8);translate(0,0)" dur="4s" repeatCount="indefinite" />
-                  <rect x="20" y="280" width="50" height="20" rx="10" fill="#10B981" opacity="0.3" />
-                  <text x="45" y="293" textAnchor="middle" fill="#10B981" fontSize="8" fontWeight="bold">99.9% Uptime</text>
+                  <rect x="20" y="280" width="62" height="20" rx="10" fill="#10B981" opacity="0.3" />
+                  <text x="51" y="293" textAnchor="middle" fill="#10B981" fontSize="8" fontWeight="bold">99.9% Uptime</text>
                 </g>
                 
                 <g opacity="0.9">
                   <animate attributeName="transform" values="translate(0,0);translate(0,-6);translate(0,0)" dur="3.5s" repeatCount="indefinite" />
-                  <rect x="420" y="280" width="60" height="20" rx="10" fill="#3B82F6" opacity="0.3" />
-                  <text x="450" y="293" textAnchor="middle" fill="#3B82F6" fontSize="8" fontWeight="bold">24/7 Support</text>
+                  <rect x="410" y="280" width="70" height="20" rx="10" fill="#3B82F6" opacity="0.3" />
+                  <text x="445" y="293" textAnchor="middle" fill="#3B82F6" fontSize="8" fontWeight="bold">24/7 Support</text>
                 </g>
               </svg>
             </div>
