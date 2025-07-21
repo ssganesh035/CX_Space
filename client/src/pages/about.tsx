@@ -26,11 +26,74 @@ export default function About() {
               </p>
             </div>
             <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-                alt="Technical support team collaboration"
-                className="rounded-xl shadow-lg w-full h-auto"
-              />
+              <div className="rounded-xl shadow-lg w-full h-auto bg-gradient-to-br from-slate-800 to-slate-900 p-8">
+                <svg
+                  width="100%"
+                  height="300"
+                  viewBox="0 0 400 300"
+                  className="w-full h-auto"
+                >
+                  <defs>
+                    <linearGradient id="communityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:1}} />
+                      <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:1}} />
+                    </linearGradient>
+                    <linearGradient id="nodeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" style={{stopColor:"#1E293B", stopOpacity:1}} />
+                      <stop offset="100%" style={{stopColor:"#0F172A", stopOpacity:1}} />
+                    </linearGradient>
+                    <radialGradient id="glowGradient" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:0.3}} />
+                      <stop offset="100%" style={{stopColor:"#3B82F6", stopOpacity:0}} />
+                    </radialGradient>
+                  </defs>
+                  
+                  <rect width="400" height="300" fill="url(#nodeGradient)" />
+                  
+                  <circle cx="200" cy="150" r="40" fill="url(#communityGradient)" />
+                  <circle cx="200" cy="150" r="60" fill="url(#glowGradient)" />
+                  <text x="200" y="145" textAnchor="middle" fill="white" fontSize="12" fontWeight="bold">CX</text>
+                  <text x="200" y="160" textAnchor="middle" fill="white" fontSize="8">Community</text>
+                  
+                  <g opacity="0.9">
+                    <circle cx="120" cy="80" r="20" fill="#10B981" />
+                    <text x="120" y="85" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">CS</text>
+                    <line x1="140" y1="95" x2="175" y2="125" stroke="#3B82F6" strokeWidth="2" opacity="0.6" />
+                    
+                    <circle cx="280" cy="80" r="20" fill="#F59E0B" />
+                    <text x="280" y="85" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">TS</text>
+                    <line x1="260" y1="95" x2="225" y2="125" stroke="#3B82F6" strokeWidth="2" opacity="0.6" />
+                    
+                    <circle cx="80" cy="180" r="20" fill="#8B5CF6" />
+                    <text x="80" y="185" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">SE</text>
+                    <line x1="100" y1="165" x2="160" y2="150" stroke="#3B82F6" strokeWidth="2" opacity="0.6" />
+                    
+                    <circle cx="320" cy="180" r="20" fill="#EF4444" />
+                    <text x="320" y="185" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">PS</text>
+                    <line x1="300" y1="165" x2="240" y2="150" stroke="#3B82F6" strokeWidth="2" opacity="0.6" />
+                    
+                    <circle cx="150" cy="240" r="20" fill="#06B6D4" />
+                    <text x="150" y="245" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">AM</text>
+                    <line x1="165" y1="225" x2="185" y2="185" stroke="#3B82F6" strokeWidth="2" opacity="0.6" />
+                    
+                    <circle cx="250" cy="240" r="20" fill="#84CC16" />
+                    <text x="250" y="245" textAnchor="middle" fill="white" fontSize="8" fontWeight="bold">IM</text>
+                    <line x1="235" y1="225" x2="215" y2="185" stroke="#3B82F6" strokeWidth="2" opacity="0.6" />
+                  </g>
+                  
+                  <g opacity="0.7">
+                    <animate attributeName="transform" values="translate(0,0);translate(0,-10);translate(0,0)" dur="4s" repeatCount="indefinite" />
+                    <rect x="40" y="40" width="30" height="20" rx="4" fill="#3B82F6" opacity="0.3" />
+                    <text x="55" y="53" textAnchor="middle" fill="#3B82F6" fontSize="8">Events</text>
+                  </g>
+                  
+                  <g opacity="0.7">
+                    <animate attributeName="transform" values="translate(0,0);translate(0,-8);translate(0,0)" dur="3.5s" repeatCount="indefinite" />
+                    <rect x="330" y="40" width="30" height="20" rx="4" fill="#06B6D4" opacity="0.3" />
+                    <text x="345" y="53" textAnchor="middle" fill="#06B6D4" fontSize="8">Jobs</text>
+                  </g>
+                </svg>
+              </div>
             </div>
           </div>
 

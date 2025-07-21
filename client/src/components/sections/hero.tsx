@@ -42,11 +42,58 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl blur-xl opacity-25 animate-pulse"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl blur-lg opacity-20 animate-pulse delay-75"></div>
-            <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Technical support team collaboration"
-              className="rounded-xl shadow-2xl w-full h-auto relative z-10 floating border border-blue-500/20"
-            />
+            <div className="rounded-xl shadow-2xl w-full h-auto relative z-10 floating border border-blue-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-8">
+              <svg
+                width="100%"
+                height="300"
+                viewBox="0 0 400 300"
+                className="w-full h-auto"
+              >
+                <defs>
+                  <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:0.1}} />
+                    <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:0.1}} />
+                  </linearGradient>
+                  <linearGradient id="deviceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:1}} />
+                    <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:1}} />
+                  </linearGradient>
+                  <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor:"#1E293B", stopOpacity:1}} />
+                    <stop offset="100%" style={{stopColor:"#0F172A", stopOpacity:1}} />
+                  </linearGradient>
+                </defs>
+                
+                <rect width="400" height="300" fill="url(#bgGradient)" />
+                
+                <circle cx="50" cy="50" r="3" fill="#3B82F6" opacity="0.6">
+                  <animate attributeName="cy" values="50;40;50" dur="3s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="350" cy="80" r="2" fill="#06B6D4" opacity="0.8">
+                  <animate attributeName="cy" values="80;70;80" dur="2.5s" repeatCount="indefinite" />
+                </circle>
+                
+                <rect x="120" y="80" width="160" height="120" rx="8" fill="url(#deviceGradient)" />
+                <rect x="130" y="90" width="140" height="90" rx="4" fill="url(#screenGradient)" />
+                
+                <rect x="140" y="100" width="120" height="4" rx="2" fill="#3B82F6" opacity="0.8" />
+                <rect x="140" y="110" width="80" height="3" rx="1.5" fill="#06B6D4" opacity="0.6" />
+                
+                <circle cx="150" cy="165" r="6" fill="#10B981" opacity="0.8" />
+                <circle cx="180" cy="165" r="6" fill="#10B981" opacity="0.8" />
+                <circle cx="210" cy="165" r="6" fill="#10B981" opacity="0.8" />
+                
+                <rect x="300" y="120" width="60" height="100" rx="12" fill="url(#deviceGradient)" />
+                <rect x="308" y="130" width="44" height="70" rx="4" fill="url(#screenGradient)" />
+                
+                <g opacity="0.8">
+                  <animate attributeName="transform" values="translate(0,0);translate(0,-5);translate(0,0)" dur="3s" repeatCount="indefinite" />
+                  <rect x="20" y="120" width="40" height="25" rx="4" fill="#10B981" opacity="0.2" />
+                  <text x="40" y="135" textAnchor="middle" fill="#10B981" fontSize="10" fontWeight="bold">98%</text>
+                  <text x="40" y="145" textAnchor="middle" fill="#10B981" fontSize="6">CSAT</text>
+                </g>
+              </svg>
+            </div>
           </div>
         </div>
       </div>

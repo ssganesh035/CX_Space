@@ -41,25 +41,29 @@ export default function Testimonials() {
 
         <div className="grid lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 blob">
+            <Card key={index} className="shadow-lg hover:shadow-xl transition-all duration-500 transform hover:scale-105 bg-gradient-to-br from-white to-slate-50 border border-slate-200 hover:border-blue-300">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="relative">
-                    <Avatar className={`${testimonial.bgColor} text-white animate-bounce-slow`}>
+                    <Avatar className={`${testimonial.bgColor} text-white shadow-lg`}>
                       <AvatarFallback className={`${testimonial.bgColor} text-white`}>
                         {testimonial.initials}
                       </AvatarFallback>
                     </Avatar>
-                    <div className="absolute -top-2 -right-2 text-xl animate-wiggle">
+                    <div className="absolute -top-1 -right-1 text-sm bg-white rounded-full w-6 h-6 flex items-center justify-center shadow-sm">
                       {testimonial.emoji}
                     </div>
                   </div>
                   <div className="ml-4">
                     <h4 className="font-semibold text-neutral-900">{testimonial.name}</h4>
-                    <p className="text-sm text-neutral-600">{testimonial.role}</p>
+                    <p className="text-sm text-blue-600 font-medium">{testimonial.role}</p>
                   </div>
                 </div>
-                <p className="text-neutral-600 italic">"{testimonial.content}"</p>
+                <div className="relative">
+                  <div className="absolute -left-2 -top-1 text-3xl text-blue-400 opacity-50">"</div>
+                  <p className="text-neutral-700 italic pl-4">{testimonial.content}</p>
+                  <div className="absolute -right-2 -bottom-1 text-3xl text-blue-400 opacity-50">"</div>
+                </div>
               </CardContent>
             </Card>
           ))}
