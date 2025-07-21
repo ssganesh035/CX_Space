@@ -117,7 +117,12 @@ export default function Hero() {
                   <text x="15" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">CRM</text>
                 </g>
                 
-                <g transform="translate(420, 35)">
+                <g transform="translate(380, 25)">
+                  <rect x="0" y="0" width="35" height="16" rx="3" fill="#06B6D4" opacity="0.8" />
+                  <text x="17" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">Frontend</text>
+                </g>
+                
+                <g transform="translate(440, 15)">
                   <rect x="0" y="0" width="25" height="16" rx="3" fill="#10B981" opacity="0.8" />
                   <text x="12" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">DB</text>
                 </g>
@@ -134,11 +139,6 @@ export default function Hero() {
                 </g>
                 
                 {/* Right Side */}
-                <g transform="translate(440, 85)">
-                  <rect x="0" y="0" width="35" height="16" rx="3" fill="#06B6D4" opacity="0.7" />
-                  <text x="17" y="11" textAnchor="middle" fill="#06B6D4" fontSize="6" fontWeight="bold">Frontend</text>
-                </g>
-                
                 <g transform="translate(460, 140)">
                   <rect x="0" y="0" width="32" height="16" rx="3" fill="#10B981" opacity="0.6" />
                   <text x="16" y="11" textAnchor="middle" fill="#10B981" fontSize="6" fontWeight="bold">Backend</text>
