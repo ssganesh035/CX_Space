@@ -45,52 +45,155 @@ export default function Hero() {
             <div className="rounded-xl shadow-2xl w-full h-auto relative z-10 floating border border-blue-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-8">
               <svg
                 width="100%"
-                height="300"
-                viewBox="0 0 400 300"
+                height="320"
+                viewBox="0 0 500 320"
                 className="w-full h-auto"
               >
                 <defs>
                   <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:0.1}} />
-                    <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:0.1}} />
-                  </linearGradient>
-                  <linearGradient id="deviceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:1}} />
-                    <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:1}} />
-                  </linearGradient>
-                  <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style={{stopColor:"#1E293B", stopOpacity:1}} />
                     <stop offset="100%" style={{stopColor:"#0F172A", stopOpacity:1}} />
                   </linearGradient>
+                  <linearGradient id="screenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:0.8}} />
+                    <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:0.8}} />
+                  </linearGradient>
+                  <linearGradient id="personGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style={{stopColor:"#F8FAFC", stopOpacity:1}} />
+                    <stop offset="100%" style={{stopColor:"#E2E8F0", stopOpacity:1}} />
+                  </linearGradient>
                 </defs>
                 
-                <rect width="400" height="300" fill="url(#bgGradient)" />
+                <rect width="500" height="320" fill="url(#bgGradient)" />
                 
-                <circle cx="50" cy="50" r="3" fill="#3B82F6" opacity="0.6">
-                  <animate attributeName="cy" values="50;40;50" dur="3s" repeatCount="indefinite" />
-                </circle>
-                <circle cx="350" cy="80" r="2" fill="#06B6D4" opacity="0.8">
-                  <animate attributeName="cy" values="80;70;80" dur="2.5s" repeatCount="indefinite" />
-                </circle>
+                {/* B2B SaaS Dashboard */}
+                <rect x="80" y="60" width="180" height="120" rx="8" fill="#1E293B" stroke="#3B82F6" strokeWidth="2" />
+                <rect x="90" y="70" width="160" height="90" rx="4" fill="url(#screenGlow)" opacity="0.1" />
                 
-                <rect x="120" y="80" width="160" height="120" rx="8" fill="url(#deviceGradient)" />
-                <rect x="130" y="90" width="140" height="90" rx="4" fill="url(#screenGradient)" />
+                {/* B2B SaaS Label */}
+                <rect x="85" y="40" width="60" height="16" rx="8" fill="#3B82F6" />
+                <text x="115" y="51" textAnchor="middle" fill="white" fontSize="10" fontWeight="bold">B2B SaaS</text>
                 
-                <rect x="140" y="100" width="120" height="4" rx="2" fill="#3B82F6" opacity="0.8" />
-                <rect x="140" y="110" width="80" height="3" rx="1.5" fill="#06B6D4" opacity="0.6" />
+                {/* Dashboard Content */}
+                <text x="100" y="85" fill="#3B82F6" fontSize="8" fontWeight="bold">Customer Dashboard</text>
+                <rect x="100" y="95" width="80" height="3" rx="1.5" fill="#06B6D4" opacity="0.8" />
+                <rect x="100" y="105" width="60" height="3" rx="1.5" fill="#3B82F6" opacity="0.6" />
+                <rect x="100" y="115" width="100" height="3" rx="1.5" fill="#10B981" opacity="0.6" />
                 
-                <circle cx="150" cy="165" r="6" fill="#10B981" opacity="0.8" />
-                <circle cx="180" cy="165" r="6" fill="#10B981" opacity="0.8" />
-                <circle cx="210" cy="165" r="6" fill="#10B981" opacity="0.8" />
+                {/* Analytics Charts */}
+                <rect x="100" y="130" width="20" height="15" fill="#3B82F6" opacity="0.7" />
+                <rect x="125" y="125" width="20" height="20" fill="#06B6D4" opacity="0.7" />
+                <rect x="150" y="120" width="20" height="25" fill="#10B981" opacity="0.7" />
                 
-                <rect x="300" y="120" width="60" height="100" rx="12" fill="url(#deviceGradient)" />
-                <rect x="308" y="130" width="44" height="70" rx="4" fill="url(#screenGradient)" />
+                {/* Customer Success Metrics */}
+                <circle cx="210" cy="130" r="8" fill="#10B981" />
+                <text x="210" y="135" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">98%</text>
+                <text x="210" y="150" textAnchor="middle" fill="#10B981" fontSize="6">CSAT</text>
                 
-                <g opacity="0.8">
-                  <animate attributeName="transform" values="translate(0,0);translate(0,-5);translate(0,0)" dur="3s" repeatCount="indefinite" />
-                  <rect x="20" y="120" width="40" height="25" rx="4" fill="#10B981" opacity="0.2" />
-                  <text x="40" y="135" textAnchor="middle" fill="#10B981" fontSize="10" fontWeight="bold">98%</text>
-                  <text x="40" y="145" textAnchor="middle" fill="#10B981" fontSize="6">CSAT</text>
+                {/* Human Elements - Support Team */}
+                <g transform="translate(300, 80)">
+                  {/* Person 1 - Customer Success Manager */}
+                  <circle cx="20" cy="25" r="12" fill="url(#personGradient)" stroke="#3B82F6" strokeWidth="2" />
+                  <circle cx="20" cy="20" r="4" fill="#3B82F6" />
+                  <rect x="15" y="25" width="10" height="15" rx="2" fill="#3B82F6" />
+                  <text x="20" y="50" textAnchor="middle" fill="#06B6D4" fontSize="6">CS Manager</text>
+                  
+                  {/* Person 2 - Tech Support */}
+                  <circle cx="60" cy="25" r="12" fill="url(#personGradient)" stroke="#06B6D4" strokeWidth="2" />
+                  <circle cx="60" cy="20" r="4" fill="#06B6D4" />
+                  <rect x="55" y="25" width="10" height="15" rx="2" fill="#06B6D4" />
+                  <text x="60" y="50" textAnchor="middle" fill="#06B6D4" fontSize="6">Tech Support</text>
+                  
+                  {/* Person 3 - Solutions Engineer */}
+                  <circle cx="100" cy="25" r="12" fill="url(#personGradient)" stroke="#10B981" strokeWidth="2" />
+                  <circle cx="100" cy="20" r="4" fill="#10B981" />
+                  <rect x="95" y="25" width="10" height="15" rx="2" fill="#10B981" />
+                  <text x="100" y="50" textAnchor="middle" fill="#10B981" fontSize="6">Solutions Eng</text>
+                </g>
+                
+                {/* Communication Lines */}
+                <path d="M 260 120 Q 280 100 300 110" stroke="#3B82F6" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
+                  <animate attributeName="strokeDashoffset" values="0;8" dur="2s" repeatCount="indefinite" />
+                </path>
+                <path d="M 260 140 Q 290 130 340 110" stroke="#06B6D4" strokeWidth="2" opacity="0.6" strokeDasharray="4,4">
+                  <animate attributeName="strokeDashoffset" values="0;8" dur="1.8s" repeatCount="indefinite" />
+                </path>
+                
+                {/* AI Innovation */}
+                <g transform="translate(40, 200)">
+                  <rect x="0" y="0" width="80" height="40" rx="8" fill="#8B5CF6" opacity="0.2" stroke="#8B5CF6" strokeWidth="1" />
+                  <text x="40" y="15" textAnchor="middle" fill="#8B5CF6" fontSize="8" fontWeight="bold">AI Innovation</text>
+                  <circle cx="20" cy="25" r="3" fill="#8B5CF6" opacity="0.8">
+                    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="40" cy="25" r="3" fill="#8B5CF6" opacity="0.6">
+                    <animate attributeName="r" values="3;4;3" dur="1.5s" repeatCount="indefinite" />
+                  </circle>
+                  <circle cx="60" cy="25" r="3" fill="#8B5CF6" opacity="0.4">
+                    <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite" />
+                  </circle>
+                </g>
+                
+                {/* Product Knowledge Base */}
+                <g transform="translate(150, 200)">
+                  <rect x="0" y="0" width="90" height="40" rx="8" fill="#F59E0B" opacity="0.2" stroke="#F59E0B" strokeWidth="1" />
+                  <text x="45" y="15" textAnchor="middle" fill="#F59E0B" fontSize="8" fontWeight="bold">Product Knowledge</text>
+                  <rect x="10" y="20" width="15" height="12" rx="2" fill="#F59E0B" opacity="0.6" />
+                  <rect x="30" y="20" width="15" height="12" rx="2" fill="#F59E0B" opacity="0.7" />
+                  <rect x="50" y="20" width="15" height="12" rx="2" fill="#F59E0B" opacity="0.5" />
+                </g>
+                
+                {/* Customer Support Tickets */}
+                <g transform="translate(280, 200)">
+                  <rect x="0" y="0" width="100" height="40" rx="8" fill="#EF4444" opacity="0.2" stroke="#EF4444" strokeWidth="1" />
+                  <text x="50" y="15" textAnchor="middle" fill="#EF4444" fontSize="8" fontWeight="bold">Customer Support</text>
+                  
+                  {/* Ticket Icons */}
+                  <rect x="10" y="20" width="12" height="8" rx="1" fill="#EF4444" opacity="0.6" />
+                  <text x="16" y="26" textAnchor="middle" fill="white" fontSize="4">1</text>
+                  
+                  <rect x="30" y="20" width="12" height="8" rx="1" fill="#10B981" opacity="0.6" />
+                  <text x="36" y="26" textAnchor="middle" fill="white" fontSize="4">✓</text>
+                  
+                  <rect x="50" y="20" width="12" height="8" rx="1" fill="#06B6D4" opacity="0.6" />
+                  <text x="56" y="26" textAnchor="middle" fill="white" fontSize="4">2</text>
+                </g>
+                
+                {/* Communication Bubbles */}
+                <g transform="translate(400, 150)">
+                  <ellipse cx="0" cy="0" rx="25" ry="15" fill="#3B82F6" opacity="0.3" />
+                  <text x="0" y="3" textAnchor="middle" fill="#3B82F6" fontSize="8">Chat</text>
+                  
+                  <ellipse cx="0" cy="30" rx="25" ry="15" fill="#06B6D4" opacity="0.3" />
+                  <text x="0" y="33" textAnchor="middle" fill="#06B6D4" fontSize="8">Email</text>
+                  
+                  <ellipse cx="0" cy="60" rx="25" ry="15" fill="#10B981" opacity="0.3" />
+                  <text x="0" y="63" textAnchor="middle" fill="#10B981" fontSize="8">Voice</text>
+                </g>
+                
+                {/* Technology Stack Icons */}
+                <g transform="translate(420, 60)">
+                  <rect x="0" y="0" width="20" height="15" rx="3" fill="#3B82F6" opacity="0.7" />
+                  <text x="10" y="10" textAnchor="middle" fill="white" fontSize="6">API</text>
+                  
+                  <rect x="0" y="20" width="20" height="15" rx="3" fill="#06B6D4" opacity="0.7" />
+                  <text x="10" y="30" textAnchor="middle" fill="white" fontSize="6">CRM</text>
+                  
+                  <rect x="0" y="40" width="20" height="15" rx="3" fill="#10B981" opacity="0.7" />
+                  <text x="10" y="50" textAnchor="middle" fill="white" fontSize="6">DB</text>
+                </g>
+                
+                {/* Floating Success Indicators */}
+                <g opacity="0.9">
+                  <animate attributeName="transform" values="translate(0,0);translate(0,-8);translate(0,0)" dur="4s" repeatCount="indefinite" />
+                  <rect x="20" y="280" width="50" height="20" rx="10" fill="#10B981" opacity="0.3" />
+                  <text x="45" y="293" textAnchor="middle" fill="#10B981" fontSize="8" fontWeight="bold">99.9% Uptime</text>
+                </g>
+                
+                <g opacity="0.9">
+                  <animate attributeName="transform" values="translate(0,0);translate(0,-6);translate(0,0)" dur="3.5s" repeatCount="indefinite" />
+                  <rect x="420" y="280" width="60" height="20" rx="10" fill="#3B82F6" opacity="0.3" />
+                  <text x="450" y="293" textAnchor="middle" fill="#3B82F6" fontSize="8" fontWeight="bold">24/7 Support</text>
                 </g>
               </svg>
             </div>
