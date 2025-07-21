@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl blur-xl opacity-25 animate-pulse"></div>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-xl blur-lg opacity-20 animate-pulse delay-75"></div>
-            <div className="rounded-xl shadow-2xl w-full h-auto relative z-10 floating border border-blue-500/20 bg-gradient-to-br from-slate-800 to-slate-900 p-8">
+            <div className="w-full h-auto relative z-10 floating">
               <svg
                 width="100%"
                 height="320"
@@ -50,10 +50,6 @@ export default function Hero() {
                 className="w-full h-auto"
               >
                 <defs>
-                  <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{stopColor:"#1E293B", stopOpacity:1}} />
-                    <stop offset="100%" style={{stopColor:"#0F172A", stopOpacity:1}} />
-                  </linearGradient>
                   <linearGradient id="screenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" style={{stopColor:"#3B82F6", stopOpacity:0.8}} />
                     <stop offset="100%" style={{stopColor:"#06B6D4", stopOpacity:0.8}} />
@@ -64,10 +60,8 @@ export default function Hero() {
                   </linearGradient>
                 </defs>
                 
-                <rect width="500" height="320" fill="url(#bgGradient)" />
-                
                 {/* B2B SaaS Dashboard */}
-                <rect x="80" y="60" width="180" height="120" rx="8" fill="#1E293B" stroke="#3B82F6" strokeWidth="2" />
+                <rect x="80" y="60" width="180" height="120" rx="8" fill="#1E293B" stroke="#3B82F6" strokeWidth="2" opacity="0.9" />
                 <rect x="90" y="70" width="160" height="90" rx="4" fill="url(#screenGlow)" opacity="0.1" />
                 
                 {/* B2B SaaS Label */}
