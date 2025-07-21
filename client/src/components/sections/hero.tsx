@@ -77,10 +77,7 @@ export default function Hero() {
                 <rect x="125" y="125" width="20" height="20" fill="#06B6D4" opacity="0.7" />
                 <rect x="150" y="120" width="20" height="25" fill="#10B981" opacity="0.7" />
                 
-                {/* Customer Success Metrics */}
-                <circle cx="210" cy="130" r="8" fill="#10B981" />
-                <text x="210" y="135" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">98%</text>
-                <text x="210" y="150" textAnchor="middle" fill="#10B981" fontSize="6">CSAT</text>
+
                 
                 {/* Human Elements - Support Team - Bigger */}
                 <g transform="translate(290, 70)">
@@ -108,43 +105,49 @@ export default function Hero() {
                 
 
                 
-                {/* Tech Elements - Top Row Horizontally */}
-                <g transform="translate(50, 15)">
-                  <rect x="0" y="0" width="25" height="16" rx="3" fill="#3B82F6" opacity="0.7" />
+                {/* Cool Scattered Tech Keywords */}
+                {/* Top Area */}
+                <g transform="translate(30, 25)">
+                  <rect x="0" y="0" width="25" height="16" rx="3" fill="#3B82F6" opacity="0.8" />
                   <text x="12" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">API</text>
-                  
-                  <rect x="35" y="0" width="30" height="16" rx="3" fill="#06B6D4" opacity="0.7" />
-                  <text x="50" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">CRM</text>
-                  
-                  <rect x="75" y="0" width="25" height="16" rx="3" fill="#10B981" opacity="0.7" />
-                  <text x="87" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">DB</text>
-                  
-                  <rect x="110" y="0" width="50" height="16" rx="3" fill="#8B5CF6" opacity="0.7" />
-                  <text x="135" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">Enterprise</text>
-                  
-                  <rect x="170" y="0" width="70" height="16" rx="3" fill="#EF4444" opacity="0.7" />
-                  <text x="205" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">Rapport Building</text>
                 </g>
                 
-                {/* Additional Tech Keywords - Scattered */}
-                <g transform="translate(30, 60)">
-                  <rect x="0" y="0" width="42" height="18" rx="4" fill="#3B82F6" opacity="0.4" />
+                <g transform="translate(280, 15)">
+                  <rect x="0" y="0" width="30" height="16" rx="3" fill="#06B6D4" opacity="0.8" />
+                  <text x="15" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">CRM</text>
+                </g>
+                
+                <g transform="translate(420, 35)">
+                  <rect x="0" y="0" width="25" height="16" rx="3" fill="#10B981" opacity="0.8" />
+                  <text x="12" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">DB</text>
+                </g>
+                
+                {/* Left Side */}
+                <g transform="translate(15, 90)">
+                  <rect x="0" y="0" width="50" height="16" rx="3" fill="#8B5CF6" opacity="0.7" />
+                  <text x="25" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">Enterprise</text>
+                </g>
+                
+                <g transform="translate(10, 160)">
+                  <rect x="0" y="0" width="42" height="18" rx="4" fill="#3B82F6" opacity="0.6" />
                   <text x="21" y="12" textAnchor="middle" fill="#3B82F6" fontSize="6" fontWeight="bold">Webhooks</text>
                 </g>
                 
-                <g transform="translate(350, 40)">
-                  <rect x="0" y="0" width="35" height="16" rx="3" fill="#06B6D4" opacity="0.4" />
+                {/* Right Side */}
+                <g transform="translate(440, 85)">
+                  <rect x="0" y="0" width="35" height="16" rx="3" fill="#06B6D4" opacity="0.7" />
                   <text x="17" y="11" textAnchor="middle" fill="#06B6D4" fontSize="6" fontWeight="bold">Frontend</text>
                 </g>
                 
-                <g transform="translate(300, 20)">
-                  <rect x="0" y="0" width="32" height="16" rx="3" fill="#10B981" opacity="0.4" />
+                <g transform="translate(460, 140)">
+                  <rect x="0" y="0" width="32" height="16" rx="3" fill="#10B981" opacity="0.6" />
                   <text x="16" y="11" textAnchor="middle" fill="#10B981" fontSize="6" fontWeight="bold">Backend</text>
                 </g>
                 
-                <g transform="translate(400, 50)">
-                  <rect x="0" y="0" width="26" height="16" rx="3" fill="#F59E0B" opacity="0.4" />
-                  <text x="13" y="11" textAnchor="middle" fill="#F59E0B" fontSize="6" fontWeight="bold">Data</text>
+                {/* Bottom Area */}
+                <g transform="translate(70, 250)">
+                  <rect x="0" y="0" width="70" height="16" rx="3" fill="#EF4444" opacity="0.7" />
+                  <text x="35" y="11" textAnchor="middle" fill="white" fontSize="6" fontWeight="bold">Rapport Building</text>
                 </g>
                 
                 {/* AI Innovation - Enhanced - Bigger */}
