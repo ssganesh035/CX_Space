@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CXSpace - Community for Customer Success & Technical Support Professionals</title>
+    <meta name="description" content="Join CXSpace, the premier community for technical support engineers, customer success professionals, and B2B SaaS experts. Connect, learn, and grow together.">
+    <meta name="keywords" content="customer success, technical support, B2B SaaS, community, CXSpace, support engineers, customer obsessed">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#1E40AF',
+                        accent: '#10B981',
+                        neutral: {
+                            50: '#F8FAFC',
+                            100: '#F1F5F9',
+                            200: '#E2E8F0',
+                            300: '#CBD5E1',
+                            400: '#94A3B8',
+                            500: '#64748B',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1E293B',
+                            900: '#0F172A'
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans bg-neutral-50 text-neutral-800">
+    <!-- @COMPONENT: Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">CX</span>
+                        </div>
+                        <span class="ml-2 text-xl font-bold text-neutral-900">CXSpace</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-neutral-900 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-neutral-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About Us</a>
+                        <a href="#supportathon" class="text-neutral-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Supportathon</a>
+                        <a href="#meetups" class="text-neutral-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Meetups</a>
+                        <a href="#careers" class="text-neutral-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Careers</a>
+                        <a href="#faq" class="text-neutral-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors">FAQs</a>
+                    </div>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#join" class="bg-primary text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-secondary transition-colors">
+                        Join Community
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-neutral-600 hover:text-primary focus:outline-none focus:text-primary p-2" data-event="click:toggleMobileMenu">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                    <a href="#home" class="block px-3 py-2 text-base font-medium text-neutral-900 hover:text-primary">Home</a>
+                    <a href="#about" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary">About Us</a>
+                    <a href="#supportathon" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary">Supportathon</a>
+                    <a href="#meetups" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary">Meetups</a>
+                    <a href="#careers" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary">Careers</a>
+                    <a href="#faq" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary">FAQs</a>
+                    <a href="#join" class="block px-3 py-2 text-base font-medium bg-primary text-white rounded-lg mt-4">Join Community</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: HeroSection -->
+    <section id="home" class="relative bg-gradient-to-r from-primary to-secondary py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6">
+                        Welcome to <span class="text-accent">CXSpace</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-8 text-blue-100">
+                        The premier community for Customer Success Engineers, Technical Support Professionals, and B2B SaaS experts who are passionate about customer success.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#join" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors text-center">
+                            <i class="fas fa-users mr-2"></i>
+                            Join Our Community
+                        </a>
+                        <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- A diverse group of technical support professionals collaborating in a modern office environment -->
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Technical support team collaboration" class="rounded-xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: CommunityStats -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2" data-bind="stats.members">2,500+</div>
+                    <div class="text-neutral-600">Active Members</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2" data-bind="stats.events">150+</div>
+                    <div class="text-neutral-600">Events Hosted</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2" data-bind="stats.companies">500+</div>
+                    <div class="text-neutral-600">Companies</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2" data-bind="stats.countries">45+</div>
+                    <div class="text-neutral-600">Countries</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: CommunityStats -->
+
+    <!-- @COMPONENT: About Section -->
+    <section id="about" class="py-20 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">About CXSpace</h2>
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                    We're building the world's largest community of customer-obsessed professionals who believe in the power of exceptional support and success.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-neutral-900 mb-6">Our Mission</h3>
+                    <p class="text-lg text-neutral-600 mb-6">
+                        To create a thriving ecosystem where technical support engineers, customer success professionals, and solutions engineers can connect, learn, and grow together while advancing the art and science of customer success.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900">Knowledge Sharing</h4>
+                                <p class="text-neutral-600">Learn from industry experts and share your own insights</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900">Career Growth</h4>
+                                <p class="text-neutral-600">Access mentorship, job opportunities, and skill development</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-accent text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900">Global Network</h4>
+                                <p class="text-neutral-600">Connect with professionals worldwide and build lasting relationships</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- A professional team meeting focused on customer success metrics and strategies -->
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Customer success team meeting" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Section -->
+
+    <!-- @COMPONENT: Join Community -->
+    <section id="join" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Join Our Community</h2>
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                    Connect with like-minded professionals, participate in discussions, and access exclusive resources across multiple platforms.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Discord Card -->
+                <div class="bg-gradient-to-br from-indigo-500 to-purple-600 text-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fab fa-discord text-4xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">Discord Community</h3>
+                            <p class="text-indigo-100">Real-time discussions & networking</p>
+                        </div>
+                    </div>
+                    <p class="text-indigo-100 mb-6">
+                        Join our Discord server for instant messaging, voice chats, topic-specific channels, and real-time collaboration with community members.
+                    </p>
+                    <a href="#" class="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors inline-flex items-center" data-event="click:joinDiscord">
+                        <i class="fab fa-discord mr-2"></i>
+                        Join Discord Server
+                    </a>
+                </div>
+
+                <!-- WhatsApp Card -->
+                <div class="bg-gradient-to-br from-green-500 to-teal-600 text-white p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <i class="fab fa-whatsapp text-4xl mr-4"></i>
+                        <div>
+                            <h3 class="text-2xl font-bold">WhatsApp Groups</h3>
+                            <p class="text-green-100">Quick updates & mobile networking</p>
+                        </div>
+                    </div>
+                    <p class="text-green-100 mb-6">
+                        Join our WhatsApp groups for quick updates, mobile-friendly discussions, and staying connected with the community on the go.
+                    </p>
+                    <a href="#" class="bg-white text-green-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-50 transition-colors inline-flex items-center" data-event="click:joinWhatsApp">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Join WhatsApp Group
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Join Community -->
+
+    <!-- @COMPONENT: Supportathon Section -->
+    <section id="supportathon" class="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white mb-16">
+                <h2 class="text-4xl font-bold mb-4">Supportathon 2024</h2>
+                <p class="text-xl text-purple-100 max-w-3xl mx-auto">
+                    Our flagship event bringing together the best minds in customer support and success for intensive collaboration, learning, and innovation.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h3 class="text-2xl font-bold mb-6">What is Supportathon?</h3>
+                    <p class="text-lg text-purple-100 mb-6">
+                        Supportathon is our annual hackathon-style event where teams compete to solve real customer support challenges, build innovative solutions, and share best practices.
+                    </p>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar-alt text-pink-300 mr-3"></i>
+                            <span class="text-purple-100">March 15-17, 2024</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-pink-300 mr-3"></i>
+                            <span class="text-purple-100">Virtual & In-Person (San Francisco)</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-users text-pink-300 mr-3"></i>
+                            <span class="text-purple-100">500+ Expected Participants</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-trophy text-pink-300 mr-3"></i>
+                            <span class="text-purple-100">$50,000 in Prizes</span>
+                        </div>
+                    </div>
+                    <a href="#" class="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-50 transition-colors inline-flex items-center" data-event="click:registerSupportathon">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Register Now
+                    </a>
+                </div>
+                <div class="relative">
+                    <!-- A dynamic tech conference or hackathon scene with participants collaborating intensively -->
+                    <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Professional community event" class="rounded-xl shadow-2xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Supportathon Section -->
+
+    <!-- @COMPONENT: Meetups Section -->
+    <section id="meetups" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Meetups & Events</h2>
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                    Join our regular meetups, workshops, and networking events happening around the world and online.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- @MAP: upcomingEvents.map(event => ( -->
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white rounded-lg px-3 py-1 text-sm font-semibold">
+                            <span data-bind="event.date">Mar 28</span>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-sm text-neutral-600" data-bind="event.time">6:00 PM PST</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-2" data-bind="event.title">Customer Success Metrics Workshop</h3>
+                    <p class="text-neutral-600 mb-4" data-bind="event.description">Learn how to measure and improve your customer success metrics with industry experts.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-neutral-500">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            <span data-bind="event.location">San Francisco, CA</span>
+                        </div>
+                        <a href="#" class="text-primary hover:text-secondary font-medium" data-event="click:viewEvent">
+                            View Details <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent text-white rounded-lg px-3 py-1 text-sm font-semibold">
+                            <span data-bind="event.date">Apr 5</span>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-sm text-neutral-600" data-bind="event.time">12:00 PM EDT</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-2" data-bind="event.title">Virtual Networking Lunch</h3>
+                    <p class="text-neutral-600 mb-4" data-bind="event.description">Connect with fellow professionals in a casual virtual setting. Bring your lunch!</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-neutral-500">
+                            <i class="fas fa-video mr-1"></i>
+                            <span data-bind="event.location">Online</span>
+                        </div>
+                        <a href="#" class="text-primary hover:text-secondary font-medium" data-event="click:viewEvent">
+                            View Details <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-50 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-secondary text-white rounded-lg px-3 py-1 text-sm font-semibold">
+                            <span data-bind="event.date">Apr 12</span>
+                        </div>
+                        <div class="ml-3">
+                            <span class="text-sm text-neutral-600" data-bind="event.time">7:00 PM GMT</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-neutral-900 mb-2" data-bind="event.title">Technical Support Best Practices</h3>
+                    <p class="text-neutral-600 mb-4" data-bind="event.description">Deep dive into advanced technical support methodologies and troubleshooting techniques.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center text-sm text-neutral-500">
+                            <i class="fas fa-map-marker-alt mr-1"></i>
+                            <span data-bind="event.location">London, UK</span>
+                        </div>
+                        <a href="#" class="text-primary hover:text-secondary font-medium" data-event="click:viewEvent">
+                            View Details <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="#" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors" data-event="click:viewAllEvents">
+                    View All Events
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Meetups Section -->
+
+    <!-- @COMPONENT: Testimonials -->
+    <section class="py-20 bg-neutral-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">What Our Members Say</h2>
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                    Hear from professionals who've grown their careers and expanded their networks through CXSpace.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- @MAP: testimonials.map(testimonial => ( -->
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold" data-bind="testimonial.initials">SA</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-neutral-900" data-bind="testimonial.name">Sarah Anderson</h4>
+                            <p class="text-sm text-neutral-600" data-bind="testimonial.role">Senior Customer Success Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 italic" data-bind="testimonial.content">
+                        "CXSpace has been instrumental in my career growth. The networking opportunities and knowledge sharing have helped me become a better customer success professional."
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold" data-bind="testimonial.initials">MC</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-neutral-900" data-bind="testimonial.name">Michael Chen</h4>
+                            <p class="text-sm text-neutral-600" data-bind="testimonial.role">Technical Support Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 italic" data-bind="testimonial.content">
+                        "The technical workshops and peer-to-peer learning in CXSpace have significantly improved my troubleshooting skills and helped me advance to a senior role."
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold" data-bind="testimonial.initials">EJ</span>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-semibold text-neutral-900" data-bind="testimonial.name">Emily Johnson</h4>
+                            <p class="text-sm text-neutral-600" data-bind="testimonial.role">Solutions Engineer</p>
+                        </div>
+                    </div>
+                    <p class="text-neutral-600 italic" data-bind="testimonial.content">
+                        "Finding a job in customer success seemed impossible until I joined CXSpace. The career resources and mentorship program made all the difference."
+                    </p>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials -->
+
+    <!-- @COMPONENT: Careers Section -->
+    <section id="careers" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Career Opportunities</h2>
+                <p class="text-xl text-neutral-600 max-w-3xl mx-auto">
+                    Discover job opportunities, career resources, and professional development programs within our community.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-neutral-900 mb-6">Career Resources</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-briefcase text-primary text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900 mb-2">Job Board</h4>
+                                <p class="text-neutral-600">Access exclusive job postings from our partner companies and community members.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-user-graduate text-primary text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900 mb-2">Mentorship Program</h4>
+                                <p class="text-neutral-600">Connect with experienced professionals for career guidance and skill development.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-certificate text-primary text-2xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-neutral-900 mb-2">Certification Programs</h4>
+                                <p class="text-neutral-600">Earn industry-recognized certifications to advance your career.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <!-- A professional career fair or networking event scene with people discussing opportunities -->
+                    <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="B2B SaaS professionals networking" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+            </div>
+
+            <div class="bg-neutral-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-neutral-900 mb-6 text-center">Featured Job Opportunities</h3>
+                <div class="space-y-6">
+                    <!-- @MAP: jobListings.map(job => ( -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+                            <div class="flex-1">
+                                <h4 class="text-xl font-semibold text-neutral-900 mb-2" data-bind="job.title">Senior Customer Success Manager</h4>
+                                <p class="text-neutral-600 mb-2" data-bind="job.company">TechCorp Inc.</p>
+                                <div class="flex flex-wrap gap-2 mb-2">
+                                    <span class="bg-primary text-white px-3 py-1 rounded-full text-sm" data-bind="job.type">Full-time</span>
+                                    <span class="bg-neutral-200 text-neutral-700 px-3 py-1 rounded-full text-sm" data-bind="job.location">Remote</span>
+                                    <span class="bg-accent text-white px-3 py-1 rounded-full text-sm" data-bind="job.salary">$120k - $150k</span>
+                                </div>
+                                <p class="text-neutral-600 text-sm" data-bind="job.posted">Posted 2 days ago</p>
+                            </div>
+                            <div class="mt-4 lg:mt-0 lg:ml-6">
+                                <a href="#" class="bg-primary text-white px-6 py-2 rounded-lg font-medium hover:bg-secondary transition-colors" data-event="click:viewJob">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- @END_MAP )) -->
+                </div>
+                <div class="text-center mt-8">
+                    <a href="#" class="bg-primary text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors" data-event="click:viewAllJobs">
+                        View All Jobs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Careers Section -->
+
+    <!-- @COMPONENT: FAQ Section -->
+    <section id="faq" class="py-20 bg-neutral-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-neutral-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-neutral-600">
+                    Get answers to the most common questions about CXSpace and our community.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- @MAP: faqs.map(faq => ( -->
+                <div class="bg-white rounded-xl shadow-sm" data-implementation="Should implement accordion functionality">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-neutral-50 transition-colors" data-event="click:toggleFAQ">
+                        <h3 class="text-lg font-semibold text-neutral-900" data-bind="faq.question">What is CXSpace and who can join?</h3>
+                        <i class="fas fa-chevron-down text-neutral-500 transform transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" data-bind="faq.answer">
+                        <p class="text-neutral-600">
+                            CXSpace is a professional community for customer success engineers, technical support professionals, solutions engineers, and anyone in client-facing B2B SaaS roles. We welcome professionals at all career levels who are passionate about customer success and want to grow their skills and network.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-neutral-50 transition-colors" data-event="click:toggleFAQ">
+                        <h3 class="text-lg font-semibold text-neutral-900" data-bind="faq.question">How do I join the community?</h3>
+                        <i class="fas fa-chevron-down text-neutral-500 transform transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" data-bind="faq.answer">
+                        <p class="text-neutral-600">
+                            You can join our community through Discord or WhatsApp using the links provided in the "Join Our Community" section. Simply click on your preferred platform and follow the instructions to get started.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-neutral-50 transition-colors" data-event="click:toggleFAQ">
+                        <h3 class="text-lg font-semibold text-neutral-900" data-bind="faq.question">Is there a cost to join CXSpace?</h3>
+                        <i class="fas fa-chevron-down text-neutral-500 transform transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" data-bind="faq.answer">
+                        <p class="text-neutral-600">
+                            No, CXSpace is completely free to join! We believe in making professional development and networking accessible to everyone in the customer success field.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-neutral-50 transition-colors" data-event="click:toggleFAQ">
+                        <h3 class="text-lg font-semibold text-neutral-900" data-bind="faq.question">What kind of events does CXSpace organize?</h3>
+                        <i class="fas fa-chevron-down text-neutral-500 transform transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" data-bind="faq.answer">
+                        <p class="text-neutral-600">
+                            We organize various types of events including workshops, networking meetups, webinars, our annual Supportathon, virtual coffee chats, and career development sessions. Events are held both virtually and in-person in major cities worldwide.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 flex justify-between items-center hover:bg-neutral-50 transition-colors" data-event="click:toggleFAQ">
+                        <h3 class="text-lg font-semibold text-neutral-900" data-bind="faq.question">How can I participate in Supportathon?</h3>
+                        <i class="fas fa-chevron-down text-neutral-500 transform transition-transform"></i>
+                    </button>
+                    <div class="px-6 pb-6 hidden" data-bind="faq.answer">
+                        <p class="text-neutral-600">
+                            Supportathon registration opens several months before the event. You can participate virtually or in-person, either as an individual or as part of a team. We welcome participants of all skill levels and provide mentorship throughout the event.
+                        </p>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQ Section -->
+
+    <!-- @COMPONENT: CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Ready to Join CXSpace?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Connect with thousands of customer success professionals, accelerate your career, and make a lasting impact in the industry.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#join" class="bg-accent text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-colors">
+                    <i class="fas fa-users mr-2"></i>
+                    Join Our Community
+                </a>
+                <a href="#meetups" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    <i class="fas fa-calendar-alt mr-2"></i>
+                    Explore Events
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: CTA Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-neutral-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">CX</span>
+                        </div>
+                        <span class="ml-2 text-xl font-bold">CXSpace</span>
+                    </div>
+                    <p class="text-neutral-400 mb-6 max-w-md">
+                        The premier community for customer success engineers, technical support professionals, and B2B SaaS experts worldwide.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors" data-event="click:socialMedia">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors" data-event="click:socialMedia">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors" data-event="click:socialMedia">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors" data-event="click:socialMedia">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-neutral-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#supportathon" class="text-neutral-400 hover:text-white transition-colors">Supportathon</a></li>
+                        <li><a href="#meetups" class="text-neutral-400 hover:text-white transition-colors">Events</a></li>
+                        <li><a href="#careers" class="text-neutral-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#faq" class="text-neutral-400 hover:text-white transition-colors">FAQs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-neutral-400">
+                        <li>
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:hello@cxspace.tech" class="hover:text-white transition-colors">hello@cxspace.tech</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-globe mr-2"></i>
+                            <a href="https://cxspace.tech" class="hover:text-white transition-colors">cxspace.tech</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            Global Community
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-neutral-800 mt-12 pt-8 text-center text-neutral-400">
+                <p>&copy; 2024 CXSpace. All rights reserved. | <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-white transition-colors">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement business logic, API calls, and state management
+        (function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('[data-event="click:toggleMobileMenu"]');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // FAQ accordion functionality
+            document.querySelectorAll('[data-event="click:toggleFAQ"]').forEach(button => {
+                button.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        icon.classList.add('rotate-180');
+                    } else {
+                        content.classList.add('hidden');
+                        icon.classList.remove('rotate-180');
+                    }
+                });
+            });
+
+            // Basic interaction handlers for demonstration
+            document.querySelectorAll('[data-event^="click:"]').forEach(element => {
+                element.addEventListener('click', function(e) {
+                    const action = this.dataset.event.split(':')[1];
+                    console.log(`Action triggered: ${action}`);
+                    // TODO: Implement actual functionality for each action
+                });
+            });
+        })();
+    </script>
+</body>
+</html>

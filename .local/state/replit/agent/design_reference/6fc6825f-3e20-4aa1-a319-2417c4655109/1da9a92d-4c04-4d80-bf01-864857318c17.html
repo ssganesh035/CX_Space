@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSupport Community - Connect, Grow, Excel</title>
+    <meta name="description" content="Join the premier community for technical support engineers, customer success professionals, and B2B SaaS experts. Connect, learn, and grow together.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563EB',
+                        secondary: '#059669',
+                        accent: '#7C3AED',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-sans text-gray-900 bg-white">
+    <!-- @COMPONENT: Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-primary">TechSupport Hub</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-900 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="text-gray-500 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About Us</a>
+                        <a href="#supportathon" class="text-gray-500 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Supportathon</a>
+                        <a href="#meetups" class="text-gray-500 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Meetups</a>
+                        <a href="#careers" class="text-gray-500 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Careers</a>
+                        <a href="#faq" class="text-gray-500 hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQs</a>
+                        <a href="#join" class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">Join Us</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-gray-500 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-primary to-accent text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        Where Customer Success Professionals <span class="text-yellow-300">Connect & Thrive</span>
+                    </h1>
+                    <p class="text-xl mb-8 text-blue-100">
+                        Join the premier community for technical support engineers, customer success managers, and B2B SaaS professionals. Learn, network, and grow together.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#join" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                            <i class="fas fa-users mr-2"></i>
+                            Join Our Community
+                        </a>
+                        <a href="#about" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:pl-8">
+                    <!-- Professional team collaboration image -->
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Professional team collaboration" class="rounded-xl shadow-2xl w-full" data-mock="true">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Community Features -->
+    <section class="py-16 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Join Our Community?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Connect with like-minded professionals, share knowledge, and accelerate your career growth in the customer success space.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-network-wired text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Professional Network</h3>
+                    <p class="text-gray-600">Connect with thousands of support engineers, customer success managers, and solutions engineers from top companies.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Learning & Development</h3>
+                    <p class="text-gray-600">Access exclusive workshops, webinars, and training sessions designed to enhance your technical and soft skills.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-calendar-alt text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Events & Meetups</h3>
+                    <p class="text-gray-600">Participate in local meetups, virtual events, and our annual Supportathon competition.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-orange-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-briefcase text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Career Opportunities</h3>
+                    <p class="text-gray-600">Discover job openings, get referrals, and connect with hiring managers in the B2B SaaS space.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-comments text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Knowledge Sharing</h3>
+                    <p class="text-gray-600">Share best practices, get help with challenges, and contribute to our collective knowledge base.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-trophy text-white text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Recognition & Awards</h3>
+                    <p class="text-gray-600">Get recognized for your contributions and achievements in the customer success community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Community Features -->
+
+    <!-- @COMPONENT: Join Options -->
+    <section id="join" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Join?</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Choose your preferred platform and connect with our vibrant community of customer success professionals.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-indigo-50 rounded-xl p-8 text-center border-2 border-indigo-200 hover:border-indigo-400 transition-colors">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-discord text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">Discord Community</h3>
+                    <p class="text-gray-600 mb-6">Join our active Discord server with real-time discussions, channels for different topics, and voice chat events.</p>
+                    <a href="#" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors inline-block" data-implementation="Should link to Discord invite">
+                        <i class="fab fa-discord mr-2"></i>
+                        Join Discord
+                    </a>
+                </div>
+                
+                <div class="bg-green-50 rounded-xl p-8 text-center border-2 border-green-200 hover:border-green-400 transition-colors">
+                    <div class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fab fa-whatsapp text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4">WhatsApp Group</h3>
+                    <p class="text-gray-600 mb-6">Connect through our WhatsApp group for quick updates, networking, and mobile-friendly discussions.</p>
+                    <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors inline-block" data-implementation="Should link to WhatsApp group invite">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        Join WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Join Options -->
+
+    <!-- @COMPONENT: About Us -->
+    <section id="about" class="py-16 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About TechSupport Hub</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Founded by customer success professionals, for customer success professionals. We understand the unique challenges and opportunities in the B2B SaaS support space.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Our mission is to create a thriving ecosystem where technical support engineers, customer success managers, and solutions engineers can connect, learn, and grow together.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary">5K+</div>
+                            <div class="text-gray-600">Active Members</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-secondary">50+</div>
+                            <div class="text-gray-600">Events Hosted</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent">100+</div>
+                            <div class="text-gray-600">Companies</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-orange-500">95%</div>
+                            <div class="text-gray-600">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- Professional community meeting image -->
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="Professional community meeting" class="rounded-xl shadow-lg w-full" data-mock="true">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About Us -->
+
+    <!-- @COMPONENT: Supportathon -->
+    <section id="supportathon" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Supportathon 2024</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our annual competition bringing together the best minds in customer support to solve real-world challenges.
+                </p>
+            </div>
+            
+            <div class="bg-gradient-to-r from-primary to-accent rounded-2xl p-8 md:p-12 text-white mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl md:text-3xl font-bold mb-4">24 Hours. Real Problems. Amazing Solutions.</h3>
+                        <p class="text-blue-100 mb-6">
+                            Join teams of support professionals to tackle actual customer challenges from leading B2B SaaS companies. Win prizes, build your portfolio, and make lasting connections.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="#" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center" data-implementation="Should link to registration">
+                                Register Now
+                            </a>
+                            <a href="#" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors text-center" data-implementation="Should link to past events">
+                                View Past Events
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-white bg-opacity-20 rounded-xl p-6 backdrop-blur-sm">
+                            <div class="text-4xl font-bold mb-2">March 15-16</div>
+                            <div class="text-xl mb-4">Virtual Event</div>
+                            <div class="text-sm text-blue-100">
+                                <div>🏆 $10,000 in prizes</div>
+                                <div>🎯 Real customer challenges</div>
+                                <div>👥 Team-based competition</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Supportathon -->
+
+    <!-- @COMPONENT: Meetups -->
+    <section id="meetups" class="py-16 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Upcoming Meetups</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Join our regular meetups and events to connect with fellow professionals and stay updated on industry trends.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: events.map(event => ( -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Event networking image -->
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" alt="Professional networking event" class="w-full h-48 object-cover" data-mock="true">
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <div class="bg-primary text-white px-2 py-1 rounded text-sm font-medium">Virtual</div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Customer Success Metrics Masterclass</h3>
+                        <p class="text-gray-600 mb-4" data-mock="true">Learn how to define, track, and improve key customer success metrics that drive business growth.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span data-mock="true">Feb 28, 2024 - 2:00 PM PST</span>
+                        </div>
+                        <a href="#" class="w-full bg-primary text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center block" data-implementation="Should link to event registration">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- Professional tech meetup image -->
+                    <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" alt="Professional tech meetup" class="w-full h-48 object-cover" data-mock="true">
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <div class="bg-secondary text-white px-2 py-1 rounded text-sm font-medium">In-Person</div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">San Francisco Support Meetup</h3>
+                        <p class="text-gray-600 mb-4" data-mock="true">Join local support professionals for networking, discussions, and knowledge sharing in the Bay Area.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span data-mock="true">Mar 5, 2024 - 6:00 PM PST</span>
+                        </div>
+                        <a href="#" class="w-full bg-primary text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center block" data-implementation="Should link to event registration">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <!-- B2B SaaS team collaboration image -->
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=200" alt="B2B SaaS team collaboration" class="w-full h-48 object-cover" data-mock="true">
+                    <div class="p-6">
+                        <div class="flex items-center mb-2">
+                            <div class="bg-accent text-white px-2 py-1 rounded text-sm font-medium">Workshop</div>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Technical Communication Workshop</h3>
+                        <p class="text-gray-600 mb-4" data-mock="true">Master the art of explaining complex technical concepts to non-technical customers and stakeholders.</p>
+                        <div class="flex items-center text-sm text-gray-500 mb-4">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span data-mock="true">Mar 12, 2024 - 10:00 AM PST</span>
+                        </div>
+                        <a href="#" class="w-full bg-primary text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center block" data-implementation="Should link to event registration">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+                <!-- @END_MAP )) -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors" data-implementation="Should link to all events page">
+                    View All Events
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Meetups -->
+
+    <!-- @COMPONENT: Careers -->
+    <section id="careers" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Career Opportunities</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Discover exciting career opportunities in customer success, technical support, and solutions engineering.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Featured Opportunities</h3>
+                    <div class="space-y-4">
+                        <div class="bg-light rounded-lg p-6 hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg" data-mock="true">Senior Customer Success Manager</h4>
+                                <span class="bg-primary text-white px-2 py-1 rounded text-sm" data-mock="true">Remote</span>
+                            </div>
+                            <p class="text-gray-600 mb-2" data-mock="true">TechCorp Inc. • $120K - $150K</p>
+                            <p class="text-gray-600 text-sm" data-mock="true">Lead a team of CSMs and drive customer retention strategies for enterprise clients.</p>
+                        </div>
+                        
+                        <div class="bg-light rounded-lg p-6 hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg" data-mock="true">Technical Support Engineer</h4>
+                                <span class="bg-secondary text-white px-2 py-1 rounded text-sm" data-mock="true">Hybrid</span>
+                            </div>
+                            <p class="text-gray-600 mb-2" data-mock="true">SaaS Solutions • $80K - $100K</p>
+                            <p class="text-gray-600 text-sm" data-mock="true">Provide technical support for B2B SaaS platform with focus on API integrations.</p>
+                        </div>
+                        
+                        <div class="bg-light rounded-lg p-6 hover:shadow-md transition-shadow">
+                            <div class="flex justify-between items-start mb-2">
+                                <h4 class="font-semibold text-lg" data-mock="true">Solutions Engineer</h4>
+                                <span class="bg-accent text-white px-2 py-1 rounded text-sm" data-mock="true">On-site</span>
+                            </div>
+                            <p class="text-gray-600 mb-2" data-mock="true">Growth Analytics • $100K - $130K</p>
+                            <p class="text-gray-600 text-sm" data-mock="true">Bridge the gap between sales and engineering teams for enterprise implementations.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Career Resources</h3>
+                    <div class="space-y-6">
+                        <div class="bg-light rounded-lg p-6">
+                            <h4 class="font-semibold mb-3"><i class="fas fa-file-alt mr-2 text-primary"></i>Resume Reviews</h4>
+                            <p class="text-gray-600 mb-3">Get your resume reviewed by experienced professionals in the field.</p>
+                            <a href="#" class="text-primary font-medium hover:underline" data-implementation="Should link to resume review service">Request Review →</a>
+                        </div>
+                        
+                        <div class="bg-light rounded-lg p-6">
+                            <h4 class="font-semibold mb-3"><i class="fas fa-handshake mr-2 text-secondary"></i>Referral Network</h4>
+                            <p class="text-gray-600 mb-3">Connect with members who can refer you to positions at their companies.</p>
+                            <a href="#" class="text-primary font-medium hover:underline" data-implementation="Should link to referral network">Find Referrals →</a>
+                        </div>
+                        
+                        <div class="bg-light rounded-lg p-6">
+                            <h4 class="font-semibold mb-3"><i class="fas fa-comments mr-2 text-accent"></i>Interview Prep</h4>
+                            <p class="text-gray-600 mb-3">Practice interviews with community members and get valuable feedback.</p>
+                            <a href="#" class="text-primary font-medium hover:underline" data-implementation="Should link to interview prep service">Schedule Session →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Careers -->
+
+    <!-- @COMPONENT: FAQs -->
+    <section id="faq" class="py-16 bg-light">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">
+                    Got questions? We've got answers. Here are the most common questions about our community.
+                </p>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset rounded-lg" data-implementation="Should toggle FAQ answer visibility">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Who can join this community?</h3>
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        <p>Our community is open to technical support engineers, customer success managers, solutions engineers, and anyone working in client-facing roles in B2B SaaS companies. We welcome professionals at all experience levels.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset rounded-lg" data-implementation="Should toggle FAQ answer visibility">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Is there a membership fee?</h3>
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        <p>No, joining our community is completely free! We believe in making professional development and networking accessible to everyone. Some premium workshops may have fees, but the majority of our content and events are free.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset rounded-lg" data-implementation="Should toggle FAQ answer visibility">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How often do you host events?</h3>
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        <p>We host regular events including weekly virtual meetups, monthly in-person gatherings in major cities, quarterly workshops, and our annual Supportathon. Check our events calendar for the most up-to-date schedule.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset rounded-lg" data-implementation="Should toggle FAQ answer visibility">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">Can I share job opportunities?</h3>
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        <p>Absolutely! We encourage members to share relevant job opportunities. Please use our designated channels for job postings and follow our community guidelines for posting opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md">
+                    <button class="w-full text-left p-6 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-inset rounded-lg" data-implementation="Should toggle FAQ answer visibility">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-lg font-semibold">How do I participate in the Supportathon?</h3>
+                            <i class="fas fa-chevron-down text-gray-400"></i>
+                        </div>
+                    </button>
+                    <div class="px-6 pb-6 text-gray-600">
+                        <p>Registration for Supportathon opens 8 weeks before the event. You can participate as an individual or form a team. We'll provide all the details, resources, and support you need to participate successfully.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQs -->
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">TechSupport Hub</h3>
+                    <p class="text-gray-300 mb-4">Empowering customer success professionals to connect, learn, and grow together.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" data-implementation="Should link to Discord">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" data-implementation="Should link to WhatsApp">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" data-implementation="Should link to LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors" data-implementation="Should link to Twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Community</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#join" class="hover:text-white transition-colors">Join Us</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-implementation="Should link to member directory">Member Directory</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-implementation="Should link to community guidelines">Community Guidelines</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Events</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#meetups" class="hover:text-white transition-colors">Meetups</a></li>
+                        <li><a href="#supportathon" class="hover:text-white transition-colors">Supportathon</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-implementation="Should link to workshops">Workshops</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-implementation="Should link to event calendar">Event Calendar</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#careers" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-implementation="Should link to blog">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" data-implementation="Should link to contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 TechSupport Hub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement smooth scrolling for navigation links
+        (function() {
+            // Basic smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // TODO: Implement mobile menu toggle
+            // TODO: Implement FAQ accordion functionality
+            // TODO: Implement event registration modals
+            // TODO: Implement form validation for join requests
+        })();
+    </script>
+</body>
+</html>
